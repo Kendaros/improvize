@@ -5,11 +5,11 @@
 </template>
 
 <script>
-import { Vue } from 'nuxt-property-decorator'
-
-export default class Support extends Vue {
+export default {
+  fetch ({ redirect }) {
+    redirect(301, '/fr')
+  }
 }
-
 </script>
 
 <style lang="scss">

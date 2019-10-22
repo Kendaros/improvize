@@ -7,9 +7,7 @@
 <script>
 import { Vue } from 'nuxt-property-decorator'
 
-export default class Versioning extends Vue {
-}
-
+export default class Support extends Vue {}
 </script>
 
 <style lang="scss">
