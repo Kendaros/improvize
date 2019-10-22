@@ -27,13 +27,16 @@
 </template>
 
 <script>
+import { Vue, Component } from 'nuxt-property-decorator'
 import Logo from '~/components/Logo.vue'
 
-export default {
-  components: {
-    Logo
-  }
+@Component({
+  components: { Logo }
+})
+
+export default class LandingPage extends Vue {
 }
+
 </script>
 
 <style>
