@@ -18,9 +18,10 @@
 </template>
 
 <script>
-export default {
-  name: 'NavBar'
-}
+import { Vue, Component } from 'nuxt-property-decorator'
+
+@Component
+export default class NavBar extends Vue {}
 </script>
 
 <style lang="scss">
@@ -28,7 +29,6 @@ export default {
   .menu {
     list-style-type: none;
     padding: 0;
-    margin-left: 51px;
 
     .menu-item {
       display: inline-block;

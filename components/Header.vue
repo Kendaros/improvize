@@ -14,7 +14,6 @@ import NavBar from '~/components/NavBar.vue'
 @Component({
   components: { NavBar }
 })
-
 export default class Header extends Vue {}
 </script>
 
@@ -28,6 +27,7 @@ export default class Header extends Vue {}
 
   .logo {
     width: 161px;
+    margin-right: 51px;
   }
 }
 </style>

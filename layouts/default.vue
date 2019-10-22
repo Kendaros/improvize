@@ -2,17 +2,18 @@
   <div>
     <impro-header />
     <nuxt />
+    <impro-footer />
   </div>
 </template>
 
 <script>
 import { Vue, Component } from 'nuxt-property-decorator'
 import ImproHeader from '~/components/Header.vue'
+import ImproFooter from '~/components/Footer.vue'
 
 @Component({
-  components: { ImproHeader }
+  components: { ImproHeader, ImproFooter }
 })
-
 export default class DefaultLayout extends Vue {}
 </script>
 
