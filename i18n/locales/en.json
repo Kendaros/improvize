@@ -1,3 +1,9 @@
 {
-  "title": "Hello!"
+  "title": "Hello!",
+  "menu": {
+    "products": "Products",
+    "services": "Services",
+    "resources": "Resources",
+    "about-us": "About us"
+  }
 }

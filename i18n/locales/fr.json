@@ -1,3 +1,9 @@
 {
-  "title": "Bonjour !"
+  "title": "Bonjour !",
+  "menu": {
+    "products": "Produits",
+    "services": "Services",
+    "resources": "Ressources",
+    "about-us": "À propos de nous"
+  }
 }

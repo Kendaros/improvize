@@ -1,0 +1,30 @@
+$font_path: '~@/assets/fonts/';
+
+// *********** //
+// HELVETICA NEUE //
+@font-face {
+  font-family    : 'Helvetica Neuee';
+  src            : url($font_path + 'HelveticaNeue.eot'); /* IE9 Compat; Modes */
+  src            : url($font_path + 'HelveticaNeue.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url($font_path + 'HelveticaNeue.woff2') format('woff2'), /* Modern Browsers */ url($font_path + 'HelveticaNeue.woff') format('woff'); /* Modern Browsers */
+  font-style     : normal;
+  font-weight    : 400;
+  text-rendering : optimizeLegibility;
+}
+$helvetica_neue: 'Helvetica Neuee', 'Helvetica Neue', Arial, sans-serif;
+// [END] HELVETICA NEUE //
+// ***************** //
+
+// *********** //
+// MISO //
+// LIGHT
+@font-face{
+  font-family    : 'Miso Light';
+  src            : url($font_path + 'miso-light-webfont.eot'); /* IE9 Compat; Modes */
+  src            : url($font_path + 'miso-light-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url($font_path + 'miso-light-webfont.woff2') format('woff2'), /* Modern Browsers */ url($font_path + 'miso-light-webfont.woff') format('woff'); /* Modern Browsers */
+  font-style     : normal;
+  font-weight    : 400;
+  text-rendering : optimizeLegibility;
+}
+$miso: 'Miso Light', sans-serif;
+// [END] MISO //
+// ***************** //
