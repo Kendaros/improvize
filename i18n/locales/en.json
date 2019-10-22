@@ -16,5 +16,10 @@
     "who-we-are": "Who we are",
     "contact-us": "Contact us",
     "careers": "Careers"
+  },
+  "contact-us": {
+    "title": "Do you want to know more?",
+    "text": "Don’t hesitate to contact us. We can show you how the system works and see if it meets your expectations.",
+    "button": "Contact us"
   }
 }

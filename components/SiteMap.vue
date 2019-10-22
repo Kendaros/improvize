@@ -5,7 +5,9 @@
       :key="group.title"
       class="group"
     >
-      <li class="group-title group-item">{{ $t(`menu.${group.title}`) }}</li>
+      <li class="group-title group-item">
+        {{ $t(`menu.${group.title}`) }}
+      </li>
       <li
         v-for="link in group.links"
         :key="link"

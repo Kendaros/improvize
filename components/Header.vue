@@ -1,7 +1,9 @@
 <template>
   <header class="main-header">
     <div class="logo">
-      <img src="../assets/img/logo.svg" alt="Improvize logo">
+      <n-link to="/">
+        <img src="../assets/img/logo.svg" alt="Improvize logo">
+      </n-link>
     </div>
     <nav-bar />
   </header>

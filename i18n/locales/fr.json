@@ -16,5 +16,10 @@
     "who-we-are": "Who we are",
     "contact-us": "Contact us",
     "careers": "Careers"
+  },
+  "contact-us": {
+    "title": "Voulez-vous en savoir plus ?",
+    "text": "N'hésitez pas à nous contacter. Nous pouvons vous montrer notre système et voir ensemble s'il répond à vos besoins.",
+    "button": "Contactez-nous"
   }
 }

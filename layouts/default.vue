@@ -2,6 +2,7 @@
   <div>
     <impro-header />
     <nuxt />
+    <contact-us />
     <impro-footer />
   </div>
 </template>
@@ -10,9 +11,10 @@
 import { Vue, Component } from 'nuxt-property-decorator'
 import ImproHeader from '~/components/Header.vue'
 import ImproFooter from '~/components/Footer.vue'
+import ContactUs from '~/components/ContactUs.vue'
 
 @Component({
-  components: { ImproHeader, ImproFooter }
+  components: { ImproHeader, ImproFooter, ContactUs }
 })
 export default class DefaultLayout extends Vue {}
 </script>

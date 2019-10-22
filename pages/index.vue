@@ -1,6 +1,5 @@
 <template>
-  <div class="container">
-    {{ $t('title') }}
+  <div class="container" />
   </div>
 </template>
 
