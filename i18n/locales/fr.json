@@ -8,18 +8,18 @@
     "lesage": "Le Sage",
     "inpro": "Inpro",
     "spain": "Spain",
-    "cloud-hosting": "Cloud Hosting",
+    "cloud-hosting": "Hébergement",
     "support": "Support",
-    "training": "Training",
+    "training": "Formation",
     "documentation": "Documentation",
-    "issue-tracking": "Issue tracking",
-    "who-we-are": "Who we are",
-    "contact-us": "Contact us",
-    "careers": "Careers"
+    "issue-tracking": "Résolution de problèmes",
+    "who-we-are": "Qui sommes-nous",
+    "contact-us": "Nous contacter",
+    "careers": "Carrières"
   },
   "contact-us": {
     "title": "Voulez-vous en savoir plus ?",
     "text": "N'hésitez pas à nous contacter. Nous pouvons vous montrer notre système et voir ensemble s'il répond à vos besoins.",
-    "button": "Contactez-nous"
+    "button": "Nous contacter"
   }
 }
