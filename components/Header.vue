@@ -20,9 +20,11 @@ export default class Header extends Vue {}
 </script>
 
 <style lang="scss" scoped>
+@import "~@/assets/styles/variables";
+
 .main-header {
   height: 80px;
-  padding: 0 180px;
+  padding: 0 $padding-xl;
 
   display: flex;
   align-items: center;

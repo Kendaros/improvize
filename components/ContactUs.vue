@@ -6,18 +6,17 @@
     <div class="text">
       {{ $t('contact-us.text') }}
     </div>
-    <div class="button">
-      <span>{{ $t('contact-us.button') }}</span>
-    </div>
+    <contact-button />
   </section>
 </template>
 
 <script>
 import { Vue, Component } from 'nuxt-property-decorator'
 import SiteMap from '~/components/SiteMap.vue'
+import ContactButton from '~/components/ContactButton.vue'
 
 @Component({
-  components: { SiteMap }
+  components: { SiteMap, ContactButton }
 })
 export default class Footer extends Vue {}
 </script>
@@ -43,23 +42,6 @@ export default class Footer extends Vue {}
     max-width: 647px;
     text-align: center;
     margin: 38px 0 50px;
-  }
-
-  .button {
-    background-color: #31ab9b;
-    color: white;
-    font-size: $f18;
-    width: 213px;
-    height: 60px;
-    font-weight: bold;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    &:hover {
-      cursor: pointer;
-    }
   }
 }
 </style>

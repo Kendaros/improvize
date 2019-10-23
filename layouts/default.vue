@@ -41,4 +41,13 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $miso;
+}
+
+h1 {
+  font-size: $f60;
+  line-height: 0.97;
+}
 </style>
