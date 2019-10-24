@@ -4,7 +4,7 @@
     "products": "Products",
     "services": "Services",
     "resources": "Resources",
-    "about-us": "About us",
+    "about": "About us",
     "lesage": "Le Sage",
     "inpro": "Inpro",
     "spain": "Spain",
@@ -13,9 +13,11 @@
     "training": "Training",
     "documentation": "Documentation",
     "issue-tracking": "Issue tracking",
+    "versioning": "Releases",
     "who-we-are": "Who we are",
     "contact-us": "Contact us",
-    "careers": "Careers"
+    "careers": "Careers",
+    "clients": "Our clients"
   },
   "contact-us": {
     "title": "Do you want to know more?",

@@ -4,7 +4,7 @@
     "products": "Produits",
     "services": "Services",
     "resources": "Ressources",
-    "about-us": "À propos de nous",
+    "about": "À propos de nous",
     "lesage": "Le Sage",
     "inpro": "Inpro",
     "spain": "Spain",
@@ -13,13 +13,19 @@
     "training": "Formation",
     "documentation": "Documentation",
     "issue-tracking": "Résolution de problèmes",
+    "versioning": "Versions",
     "who-we-are": "Qui sommes-nous",
     "contact-us": "Nous contacter",
-    "careers": "Carrières"
+    "careers": "Carrières",
+    "clients": "Nos clients"
   },
   "contact-us": {
     "title": "Voulez-vous en savoir plus ?",
     "text": "N'hésitez pas à nous contacter. Nous pouvons vous montrer notre système et voir ensemble s'il répond à vos besoins.",
     "button": "Nous contacter"
+  },
+  "home": {
+    "title": "Software solutions for music administration",
+    "description": "Offering tools to ease music administration for publishers, subpublishers, labels and independants"
   }
 }

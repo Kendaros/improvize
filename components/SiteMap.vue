@@ -34,11 +34,11 @@ interface Category {
 
 @Component
 export default class SiteMap extends Vue {
-  static get groups (): Array<Category> {
+  get groups (): Array<Category> {
     return [
       {
         title: 'products',
-        links: ['lesage', 'inpro', 'spain']
+        links: ['lesage', 'inpro']
       },
       {
         title: 'services',
@@ -46,11 +46,11 @@ export default class SiteMap extends Vue {
       },
       {
         title: 'resources',
-        links: ['documentation', 'issue-tracking']
+        links: ['documentation', 'issue-tracking', 'versioning']
       },
       {
-        title: 'about-us',
-        links: ['who-we-are', 'contact-us', 'careers']
+        title: 'about',
+        links: ['who-we-are', 'clients']
       }
     ]
   }
