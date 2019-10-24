@@ -1,6 +1,6 @@
 <template>
   <main class="home">
-    <div class="software-solutions">
+    <section class="software-solutions">
       <div class="left">
         <div class="wrapper">
           <h1 class="title">
@@ -21,16 +21,24 @@
           class="image"
         >
       </div>
-    </div>
+    </section>
 
-    <div class="they-trust-us">
-      <h2 class="title">
-        They trust us
-      </h2>
-      <div class="clients" />
-    </div>
+    <section class="they-trust-us">
+      <h3 class="title">
+        {{ $t('general.they-trust-us') }}
+      </h3>
+      <div class="clients">
+        <img
+          v-for="client in frontClients"
+          :key="client"
+          :src="require(`~/assets/img/clients/${client}.png`)"
+          :alt="client"
+          class="client-image"
+        >
+      </div>
+    </section>
 
-    <div class="softwares">
+    <section class="softwares">
       <h2 class="title">
         Softwares
       </h2>
@@ -52,11 +60,15 @@
           :btn-text="$t('softwares.discover', { software: $t('menu.inpro') })"
         />
       </div>
-    </div>
+    </section>
+
+    <section class="services">
+
+    </section>
   </main>
 </template>
 
-<script>
+<script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
 import RectButton from '~/components/RectButton.vue'
 import ImageBlock from '~/components/ImageBlock'
@@ -65,7 +77,16 @@ import ImageBlock from '~/components/ImageBlock'
   components: { RectButton, ImageBlock }
 })
 export default class LandingPage extends Vue {
-
+  get frontClients () {
+    return [
+      'velvetica',
+      'peermusic',
+      'cymba',
+      'sentinel',
+      'budde',
+      'idol'
+    ]
+  }
 }
 </script>
 
@@ -74,6 +95,7 @@ export default class LandingPage extends Vue {
 
 .home {
   padding: 0 180px;
+
   .software-solutions {
     min-height: 730px;
     display: flex;
@@ -106,6 +128,28 @@ export default class LandingPage extends Vue {
 
       .image {
         width: 405px;
+      }
+    }
+  }
+
+  .they-trust-us {
+    text-align: center;
+    margin-bottom: 149px;
+
+    & > .title {
+      margin-bottom: 12px;
+    }
+
+    & > .clients {
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      & > .client-image {
+        flex: 0 0 114px;
+        width: 114px;
+        height: 114px;
+        margin: 0 39.5px;
       }
     }
   }

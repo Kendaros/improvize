@@ -50,4 +50,8 @@ h1, h2 {
   font-size: $f60;
   line-height: 0.97;
 }
+
+h3 {
+  font-size: $f35;
+}
 </style>
