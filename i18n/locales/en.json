@@ -1,7 +1,8 @@
 {
   "title": "Hello!",
   "general": {
-    "they-trust-us": "They trust us"
+    "they-trust-us": "They trust us",
+    "softwares": "Softwares"
   },
   "menu": {
     "products": "Products",

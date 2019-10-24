@@ -40,7 +40,7 @@
 
     <section class="softwares padded">
       <h2 class="title">
-        Softwares
+        {{ $t('general.softwares') }}
       </h2>
       <div class="softwares-blocks">
         <image-block
@@ -67,7 +67,7 @@
           :title="$t(`menu.${service}`)"
           :text="$t(`services.${service}`)"
           :img-src="require(`~/assets/img/services/${service}.svg`)"
-          :img-alt="$t('menu.service')"
+          :img-alt="$t('menu.services')"
           img-width="45"
         />
       </div>
