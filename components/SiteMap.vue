@@ -24,12 +24,17 @@
   </nav>
 </template>
 
-<script>
+<script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
+
+interface Category {
+  title: string,
+  links: Array<string>
+}
 
 @Component
 export default class SiteMap extends Vue {
-  get groups () {
+  static get groups (): Array<Category> {
     return [
       {
         title: 'products',
