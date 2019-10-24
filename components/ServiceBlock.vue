@@ -1,5 +1,5 @@
 <template>
-  <div class="image-block">
+  <div class="service-block">
     <img
       :src="imgSrc"
       :alt="imgAlt"
@@ -12,9 +12,9 @@
     <div class="text">
       {{ text }}
     </div>
-    <rect-button
-      :text="btnText"
-    />
+    <div class="more">
+      Learn more
+    </div>
   </div>
 </template>
 
@@ -25,27 +25,24 @@ import RectButton from '~/components/RectButton.vue'
 @Component({
   components: { RectButton }
 })
-export default class ImageBlock extends Vue {
+export default class ServiceBlock extends Vue {
   @Prop() title!: string
   @Prop() text!: string
   @Prop() imgSrc!: string
   @Prop() imgAlt!: string
   @Prop() imgWidth!: number
-  @Prop() btnText!: string
 }
 </script>
 
 <style lang="scss">
 @import "~@/assets/styles/variables";
-.image-block {
+.service-block {
   width: 341px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   padding: 48px;
 
   text-align: center;
 
   display: flex;
-  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 
@@ -55,14 +52,25 @@ export default class ImageBlock extends Vue {
 
   & > .title {
     font-weight: bold;
-    margin-bottom: 3px;
     line-height: $f26;
-    font-family: $helvetica_neue;
+    font-size: $f35;
+    margin: 10px 0 25px;
   }
 
   & > .text {
     margin-bottom: 30px;
     line-height: $f26;
+  }
+
+  & > .more {
+    margin-top: auto;
+    align-self: flex-end;
+    color: $contrast_color;
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 </style>

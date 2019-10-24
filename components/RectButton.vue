@@ -17,7 +17,7 @@ export default class RectButton extends Vue {
 @import "~@/assets/styles/variables";
 
 .button {
-  background-color: #31ab9b;
+  background-color: $contrast_color;
   color: white;
   font-size: $f18;
   width: 213px;

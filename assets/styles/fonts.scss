@@ -1,7 +1,7 @@
 $font_path: '~@/assets/fonts/';
 
 // *********** //
-// HELVETICA NEUE //
+// HELVETICA NEUE LIGHT AS REGULAR
 @font-face {
   font-family    : 'Helvetica Neuee';
   src            : url($font_path + 'HelveticaNeue-Light.eot'); /* IE9 Compat; Modes */
@@ -11,6 +11,17 @@ $font_path: '~@/assets/fonts/';
   text-rendering : optimizeLegibility;
 }
 $helvetica_neue: 'Helvetica Neuee', 'Helvetica Neue', Arial, sans-serif;
+
+// HELVETICA NEUE BOLD
+@font-face {
+  font-family    : 'Helvetica Neuee';
+  src            : url($font_path + 'HelveticaNeue-Bold.eot'); /* IE9 Compat; Modes */
+  src            : url($font_path + 'HelveticaNeue-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url($font_path + 'HelveticaNeue-Bold.woff2') format('woff2'), /* Modern Browsers */ url($font_path + 'HelveticaNeue-Bold.woff') format('woff'); /* Modern Browsers */
+  font-style     : normal;
+  font-weight    : bold;
+  text-rendering : optimizeLegibility;
+}
+
 // [END] HELVETICA NEUE //
 // ***************** //
 
