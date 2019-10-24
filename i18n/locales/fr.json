@@ -1,8 +1,8 @@
 {
   "title": "Bonjour !",
   "general": {
-    "they-trust-us": "They trust us",
-    "softwares": "Softwares"
+    "they-trust-us": "Ils nous font confiance",
+    "softwares": "Logiciels"
   },
   "menu": {
     "products": "Produits",
@@ -35,11 +35,12 @@
   "softwares": {
     "lesage": "Software solution for music publishers",
     "inpro": "Management software designed for labels & producers",
-    "discover": "Discover {software}"
+    "discover": "Découvrir {software}"
   },
   "services": {
     "cloud-hosting": "We have powerful servers to host and backup your data and let you access them securely.",
     "support": "We are ready to assist you every time you need us. We use any desk to access and control computers anywhere.",
-    "training": "We are certified training company. In person or on the phone we can explain all the aspects of the software so you and your team can be a 100% autonomous."
+    "training": "We are certified training company. In person or on the phone we can explain all the aspects of the software so you and your team can be a 100% autonomous.",
+    "more": "En apprendre plus"
   }
 }

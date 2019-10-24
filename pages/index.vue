@@ -69,6 +69,7 @@
           :img-src="require(`~/assets/img/services/${service}.svg`)"
           :img-alt="$t('menu.services')"
           img-width="45"
+          :more-route="`services-${service}`"
         />
       </div>
     </section>

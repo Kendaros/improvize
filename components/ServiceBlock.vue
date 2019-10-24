@@ -12,9 +12,12 @@
     <div class="text">
       {{ text }}
     </div>
-    <div class="more">
-      Learn more
-    </div>
+    <n-link
+      :to="{ name: `${moreRoute}___${$route.name.slice(-2)}` }"
+      class="more"
+    >
+      {{ $t('services.more') }}
+    </n-link>
   </div>
 </template>
 
@@ -31,6 +34,7 @@ export default class ServiceBlock extends Vue {
   @Prop() imgSrc!: string
   @Prop() imgAlt!: string
   @Prop() imgWidth!: number
+  @Prop() moreRoute!: string
 }
 </script>
 
