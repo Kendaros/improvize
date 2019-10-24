@@ -77,7 +77,7 @@ import ImageBlock from '~/components/ImageBlock'
   components: { RectButton, ImageBlock }
 })
 export default class LandingPage extends Vue {
-  get frontClients () {
+  get frontClients (): Array<string> {
     return [
       'velvetica',
       'peermusic',
