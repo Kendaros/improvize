@@ -15,7 +15,7 @@
       >
         <n-link
           class="link"
-          to="/"
+          :to="`/${$route.name.includes('___fr') ? 'fr' : ''}/${group.title}/${link}`"
         >
           {{ $t(`menu.${link}`) }}
         </n-link>
