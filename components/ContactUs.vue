@@ -6,19 +6,21 @@
     <div class="text">
       {{ $t('contact-us.text') }}
     </div>
-    <contact-button />
+    <rect-button
+      :text="$t('menu.contact-us')"
+    />
   </section>
 </template>
 
 <script>
 import { Vue, Component } from 'nuxt-property-decorator'
 import SiteMap from '~/components/SiteMap.vue'
-import ContactButton from '~/components/ContactButton.vue'
+import RectButton from '~/components/RectButton.vue'
 
 @Component({
-  components: { SiteMap, ContactButton }
+  components: { SiteMap, RectButton }
 })
-export default class Footer extends Vue {}
+export default class ContactUs extends Vue {}
 </script>
 
 <style lang="scss">

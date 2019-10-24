@@ -11,7 +11,7 @@
         {{ $t('menu.resources') }}
       </li>
       <li class="menu-item">
-        {{ $t('menu.about-us') }}
+        {{ $t('menu.about') }}
       </li>
     </ul>
   </nav>

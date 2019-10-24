@@ -9,7 +9,9 @@
           <p class="text">
             {{ $t('home.description') }}
           </p>
-          <contact-button />
+          <rect-button
+            :text="$t('menu.contact-us')"
+          />
         </div>
       </div>
       <div class="right">
@@ -20,15 +22,47 @@
         >
       </div>
     </div>
+
+    <div class="they-trust-us">
+      <h2 class="title">
+        They trust us
+      </h2>
+      <div class="clients" />
+    </div>
+
+    <div class="softwares">
+      <h2 class="title">
+        Softwares
+      </h2>
+      <div class="softwares-blocks">
+        <image-block
+          :title="$t('menu.lesage')"
+          :text="$t('softwares.lesage')"
+          :img-src="require('~/assets/img/softwares/lesage.svg')"
+          img-alt="Le Sage icon"
+          img-width="121"
+          :btn-text="$t('softwares.discover', { software: $t('menu.lesage') })"
+        />
+        <image-block
+          :title="$t('menu.inpro')"
+          :text="$t('softwares.inpro')"
+          :img-src="require('~/assets/img/softwares/inpro.svg')"
+          img-alt="Inpro icon"
+          img-width="121"
+          :btn-text="$t('softwares.discover', { software: $t('menu.inpro') })"
+        />
+      </div>
+    </div>
   </main>
 </template>
 
 <script>
 import { Vue, Component } from 'nuxt-property-decorator'
-import ContactButton from '~/components/ContactButton'
+import RectButton from '~/components/RectButton.vue'
+import ImageBlock from '~/components/ImageBlock'
 
 @Component({
-  components: { ContactButton }
+  components: { RectButton, ImageBlock }
 })
 export default class LandingPage extends Vue {
 
@@ -72,6 +106,27 @@ export default class LandingPage extends Vue {
 
       .image {
         width: 405px;
+      }
+    }
+  }
+
+  .softwares {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    & > .title {
+      margin-bottom: 52px;
+    }
+
+    & > .softwares-blocks {
+      display: flex;
+
+      .image-block {
+        + .image-block {
+          margin-left: 29px;
+        }
       }
     }
   }

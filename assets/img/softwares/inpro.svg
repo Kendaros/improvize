@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="121" height="121" viewBox="0 0 121 121">
+    <defs>
+        <filter id="a" width="108.3%" height="114.6%" x="-4.1%" y="-7.3%" filterUnits="objectBoundingBox">
+            <feOffset in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="7.5"/>
+            <feColorMatrix in="shadowBlurOuter1" result="shadowMatrixOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0"/>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"/>
+                <feMergeNode in="SourceGraphic"/>
+            </feMerge>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd" filter="url(#a)" transform="translate(-480 -48)">
+        <path fill="#1D1E1C" fill-rule="nonzero" d="M540.453 57.338l43.534 25.153v50.225l-43.534 25.153-43.534-25.153V82.491l43.534-25.153m0-.241L496.758 82.33v50.548l43.695 25.233 43.775-25.233V82.33l-43.775-25.233z"/>
+        <path stroke="#1D1E1C" stroke-width=".545" d="M540.453 158.112V57.097M584.228 82.33l-87.47 50.548M496.758 82.33l87.47 50.548"/>
+        <path fill="#1D1E1C" fill-rule="nonzero" d="M518.766 70.076l65.06 37.568-65.06 37.488V70.076m-.16-.322v75.78l65.622-37.89-65.623-37.89z"/>
+        <path fill="#1D1E1C" fill-rule="nonzero" d="M562.14 70.076v75.056l-64.98-37.488 64.98-37.568m.24-.322l-65.622 37.89 65.623 37.89v-75.78z"/>
+        <path fill="#1D1E1C" fill-rule="nonzero" d="M551.175 63.788v24.75l-32.57 18.864-21.444-12.415 54.014-31.2m21.928 12.577v62.48l-21.525-12.416V88.78l21.525-12.416m-54.498 31.441l32.57 18.865v24.83l-54.014-31.28 21.444-12.415m32.812-44.42l-54.66 31.602 21.848 12.657L551.417 88.7V63.385zm21.847 12.657l-21.847 12.657v37.89l21.847 12.577V76.042zm-54.659 31.602l-21.847 12.577 54.659 31.602v-25.234l-32.812-18.945z"/>
+        <path fill="#1D1E1C" fill-rule="nonzero" d="M529.73 63.788l54.095 31.2-21.444 12.414-32.65-18.864v-24.75m-21.848 12.576l21.444 12.416v37.648l-21.444 12.415V76.364m54.498 31.441l21.444 12.416-54.094 31.28v-24.83l32.65-18.866m-32.812-44.42v25.314l32.812 18.945 21.847-12.657-54.659-31.602zm-21.928 12.657v63.124l21.928-12.577V88.7l-21.928-12.657zm54.74 31.602l-32.812 18.945v25.234l54.66-31.602-21.848-12.577z"/>
+        <g fill-rule="nonzero" opacity=".9">
+            <path fill="#6ACC7D" d="M540.453 57.097L496.758 82.33v50.548l43.775-25.314z"/>
+            <path fill="#38C67F" d="M540.453 57.097l43.775 25.233v50.548l-43.775-25.314z"/>
+            <path fill="#3CA1AA" d="M496.758 132.878l43.695 25.233 43.775-25.233-43.695-25.314z"/>
+            <path fill="#73F99C" d="M496.758 82.33l43.775-25.233 43.695 25.233-43.695 25.314z" opacity=".6"/>
+            <path fill="#3CD38E" d="M584.228 82.33l-43.775 25.314v50.467l43.775-25.233z" opacity=".6"/>
+            <path fill="#29B291" d="M496.758 82.33v50.548l43.775 25.233v-50.467z" opacity=".6"/>
+        </g>
+        <path fill="#04997C" fill-rule="nonzero" d="M562.38 94.987v25.234l-21.927-12.657v50.547l10.964-6.288v-25.234l21.847 12.577V88.699z" opacity=".75"/>
+        <path fill="#04997C" fill-rule="nonzero" d="M507.641 88.699v37.89l10.964 6.289v-37.89l-10.883-6.37z" opacity=".95"/>
+        <g fill="#04997C" fill-rule="nonzero" opacity=".55">
+            <path d="M518.605 82.33l-10.883 6.288 10.883 6.37 10.964-6.29zM529.57 76.042l10.883 6.288 10.964-6.288-10.964-6.288z"/>
+        </g>
+    </g>
+</svg>

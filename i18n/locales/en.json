@@ -27,5 +27,10 @@
   "home": {
     "title": "Software solutions for music administration",
     "description": "Offering tools to ease music administration for publishers, subpublishers, labels and independants"
+  },
+  "softwares": {
+    "lesage": "Software solution for music publishers",
+    "inpro": "Management software designed for labels & producers",
+    "discover": "Discover {software}"
   }
 }

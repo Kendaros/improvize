@@ -1,14 +1,16 @@
 <template>
   <div class="button">
-    <span>{{ $t('contact-us.button') }}</span>
+    <span>{{ text }}</span>
   </div>
 </template>
 
-<script>
-import { Vue, Component } from 'nuxt-property-decorator'
+<script lang="ts">
+import { Vue, Component, Prop } from 'nuxt-property-decorator'
 
 @Component
-export default class ContactButton extends Vue {}
+export default class RectButton extends Vue {
+  @Prop() text!: string
+}
 </script>
 
 <style lang="scss" scoped>
