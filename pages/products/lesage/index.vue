@@ -11,15 +11,17 @@
       src="../../../assets/img/bg-gradient.svg"
       alt=""
     >
+    <list-image />
   </main>
 </template>
 
 <script>
 import { Vue, Component } from 'nuxt-property-decorator'
 import ProductPresentation from '~/components/products/ProductPresentation.vue'
+import ListImage from '~/components/products/ListImage.vue'
 
 @Component({
-  components: { ProductPresentation }
+  components: { ProductPresentation, ListImage }
 })
 export default class LeSage extends Vue {
 }
@@ -28,8 +30,16 @@ export default class LeSage extends Vue {
 
 <style lang="scss">
 .products-lesage {
+  > .product-presentation {
+    margin: 115px 0;
+  }
+
   > .bg-gradient {
     width: 100%;
+  }
+
+  > .list-image {
+    margin-top: 120px;
   }
 }
 </style>

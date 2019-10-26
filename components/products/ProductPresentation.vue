@@ -38,11 +38,10 @@ export default class ProductPresentation extends Vue {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 @import '~/assets/styles/variables.scss';
 
 .product-presentation {
-  margin: 115px 0;
   display: flex;
 
   > .left {
