@@ -59,7 +59,15 @@
   },
   "products": {
     "lesage": {
-      "presentation": "Le Sage is the swiss army knife of publishers. Designed with care, for and with the help of music professionals, it is your every day companion. \n\nIntuitive and flexible, this piece of software is capable of executing precise actions on massive flows of data very fast. Whatever the complexity of your contracts, the size of your catalogues, the diversity of your clients and their systems, Le Sage normalizes data, detects inconsistencies and delivers compliant registrations and accurate statements."
+      "presentation": "Le Sage is the swiss army knife of publishers. Designed with care, for and with the help of music professionals, it is your every day companion. \n\nIntuitive and flexible, this piece of software is capable of executing precise actions on massive flows of data very fast. Whatever the complexity of your contracts, the size of your catalogues, the diversity of your clients and their systems, Le Sage normalizes data, detects inconsistencies and delivers compliant registrations and accurate statements.",
+      "block-1": {
+        "title": "An open ecosystem",
+        "list": "Rights and catalogue imports compatible with roughly 300 systems \nFast processing even on high data volumes \nWord documents generator (contracts, registration forms, …) \nMultiple simultaneous users - Cloud connector (GDPR compliant) \nEnglish and french interface (one click switch)"
+      },
+      "block-2": {
+        "title": "CWR",
+        "list": "Catalogue imports\nError detection and bulk corrections\nPRO registration and transmission to sub publishers\nAcknowledgements processing (ACK, rejections, assigned codes)"
+      }
     }
   }
 }

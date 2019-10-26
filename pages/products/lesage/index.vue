@@ -11,7 +11,11 @@
       src="../../../assets/img/bg-gradient.svg"
       alt=""
     >
-    <list-image />
+    <list-image
+      :title="$t('products.lesage.block-1.title')"
+      :list="$t('products.lesage.block-1.list')"
+      img-path="products/lesage/lesage-01.svg"
+    />
   </main>
 </template>
 

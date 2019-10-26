@@ -2,28 +2,43 @@
   <section class="list-image padded">
     <div class="left">
       <h3 class="title">
-        An open ecosystem
+        {{ title }}
       </h3>
-      <ul class="list">
-        <li>Rights and catalogue imports compatible with roughly 300 systems</li>
-        <li>Fast processing even on high data volumes</li>
+      <ul
+        v-if="list !== ''"
+        class="list"
+      >
+        <li
+          v-for="(item, i) in list.split('\n')"
+          :key="`list-item-${title}-${i}`"
+          class="list-item">
+          {{ item }}
+        </li>
       </ul>
     </div>
     <div class="right">
-      <img src="../../assets/img/products/lesage/lesage-01.svg" alt="">
+      <img :src="getImage(imgPath)" :alt="title">
     </div>
   </section>
 </template>
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'nuxt-property-decorator'
+declare function require(path: string): any
 
 @Component
 export default class ProductPresentation extends Vue {
   @Prop() title!: string
-  @Prop() subtitle!: string
-  @Prop() description!: string
+  @Prop({ default: '' }) list!: string
   @Prop() imgPath!: string
+
+  getImage (path: string): any {
+    try {
+      return require(`../../assets/img/${path}`)
+    } catch {
+      return null
+    }
+  }
 }
 </script>
 
@@ -43,6 +58,10 @@ export default class ProductPresentation extends Vue {
       margin: 31px 0 0 14px;
       padding: 0;
       line-height: 2.25;
+
+      > .list-item {
+        padding-left: 10px;
+      }
     }
   }
 
