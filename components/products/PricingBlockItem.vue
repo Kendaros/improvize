@@ -19,17 +19,25 @@
         {{ item }}
       </li>
     </ul>
+    <rect-button
+      v-if="button"
+      :text="$t('contact-us.button')"
+    />
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'nuxt-property-decorator'
+import RectButton from '~/components/RectButton.vue'
 
-@Component
+@Component({
+  components: { RectButton }
+})
 export default class PricingBlockItem extends Vue {
   @Prop() title!: string
   @Prop() price!: number
   @Prop({ default: '' }) features!: string
+  @Prop({ default: false }) button: boolean
 }
 </script>
 
@@ -63,7 +71,7 @@ export default class PricingBlockItem extends Vue {
   }
 
   > .features {
-    margin-top: 46px;
+    margin: 46px 0 40px;
 
     > .feature {
       list-style-image: url('../../assets/img/check.svg');

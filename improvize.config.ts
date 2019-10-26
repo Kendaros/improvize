@@ -27,7 +27,8 @@ const config: ImprovizeConfig = {
   lesagePricing: [
     {
       title: 'license',
-      price: 5000
+      price: 5000,
+      button: true
     },
     {
       title: 'registration',

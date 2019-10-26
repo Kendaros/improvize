@@ -10,6 +10,7 @@
         :title="$t(`products.lesage.pricing.${item.title}.title`)"
         :price="item.price"
         :features="$t(`products.lesage.pricing.${item.title}.features`)"
+        :button="item.button"
       />
     </div>
   </section>
