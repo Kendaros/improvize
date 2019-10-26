@@ -39,7 +39,6 @@ export default class ProductPresentation extends Vue {
   @Prop() imgWidth!: number
 
   getImage (path: string): any {
-    console.log(path)
     try {
       return require(`../../assets/img/${path}.svg`)
     } catch {

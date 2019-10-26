@@ -53,19 +53,19 @@ export default class NavBarSubmenuItem extends Vue {
 
   display: flex;
 
-  & > .left {
+  > .left {
     margin-right: 13px;
-    & > .image {
+    > .image {
       width: 36px;
     }
   }
 
-  & > .right {
-    & > .title {
+  > .right {
+    > .title {
       font-weight: bold;
     }
 
-    & > .description {
+    > .description {
       margin-top: 5px;
     }
   }

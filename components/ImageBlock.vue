@@ -49,18 +49,18 @@ export default class ImageBlock extends Vue {
   align-items: center;
   flex-direction: column;
 
-  & > .image {
+  > .image {
     margin-bottom: 14px;
   }
 
-  & > .title {
+  > .title {
     font-weight: bold;
     margin-bottom: 3px;
     line-height: $f26;
     font-family: $helvetica_neue;
   }
 
-  & > .text {
+  > .text {
     margin-bottom: 30px;
     line-height: $f26;
   }

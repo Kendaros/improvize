@@ -158,17 +158,17 @@ export default class LandingPage extends Vue {
     text-align: center;
     margin-bottom: 150px;
 
-    & > .title {
+    > .title {
       margin-bottom: 12px;
     }
 
-    & > .clients {
+    > .clients {
       display: flex;
       justify-content: space-evenly;
       flex-wrap: wrap;
       margin: 0 -48px;
 
-      & > .client-image {
+      > .client-image {
         flex: 0 0 114px;
         width: 114px;
         height: 114px;
@@ -184,11 +184,11 @@ export default class LandingPage extends Vue {
     flex-direction: column;
     margin-bottom: 120px;
 
-    & > .title {
+    > .title {
       margin-bottom: 52px;
     }
 
-    & > .softwares-blocks {
+    > .softwares-blocks {
       display: flex;
 
       .image-block {
@@ -206,11 +206,11 @@ export default class LandingPage extends Vue {
     padding: 78px;
     text-align: center;
 
-    & > .title {
+    > .title {
       margin-bottom: 53px;
     }
 
-    & > .services-blocks {
+    > .services-blocks {
       display: flex;
       justify-content: center;
       align-items: stretch;

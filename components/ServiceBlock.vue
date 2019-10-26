@@ -50,23 +50,23 @@ export default class ServiceBlock extends Vue {
   align-items: center;
   flex-direction: column;
 
-  & > .image {
+  > .image {
     margin-bottom: 14px;
   }
 
-  & > .title {
+  > .title {
     font-weight: bold;
     line-height: $f26;
     font-size: $f35;
     margin: 10px 0 25px;
   }
 
-  & > .text {
+  > .text {
     margin-bottom: 30px;
     line-height: $f26;
   }
 
-  & > .more {
+  > .more {
     margin-top: auto;
     align-self: flex-end;
     color: $contrast_color;

@@ -79,6 +79,20 @@
       "block-5": {
         "title": "Quality assurance",
         "list": "Ongoing improvement : about 80 versions per year\nDevelopment ethics : listening, collaborative, intuitivity, flexibility\nCompatibility : import/export data filters\nDedicated technical support / Training\nBug tracking system"
+      },
+      "pricing": {
+        "license": {
+          "title": "License",
+          "features": "Unlimited users\nUnlimited databases\n4 hours of technical assistance\nLifetime license\nFirst year's updates"
+        },
+        "registration": {
+          "title": "Registration",
+          "features": "CWR checking and cleaning\nWorldwide registration\nCatalogue export for subpublishers"
+        },
+        "updates": {
+          "title": "Updates",
+          "features": "Yearly subscription to updates of the software"
+        }
       }
     }
   }

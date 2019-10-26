@@ -1,7 +1,8 @@
-import { Category } from '~/utils/interfaces'
+import { Category, Pricing } from '~/utils/interfaces'
 
 interface ImprovizeConfig {
-  menu: Array<Category>
+  menu: Array<Category>,
+  lesagePricing: Array<Pricing>
 }
 
 const config: ImprovizeConfig = {
@@ -21,6 +22,20 @@ const config: ImprovizeConfig = {
     {
       title: 'about',
       links: ['who-we-are', 'clients']
+    }
+  ],
+  lesagePricing: [
+    {
+      title: 'license',
+      price: 5000
+    },
+    {
+      title: 'registration',
+      price: 900
+    },
+    {
+      title: 'updates',
+      price: 560
     }
   ]
 }

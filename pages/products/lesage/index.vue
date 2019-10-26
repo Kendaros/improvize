@@ -18,6 +18,9 @@
       :list="$t(`products.lesage.block-${n}.list`)"
       :img-path="`products/lesage/block-${n}`"
     />
+    <pricing-block
+      :pricing="pricing"
+    />
   </main>
 </template>
 
@@ -25,11 +28,16 @@
 import { Vue, Component } from 'nuxt-property-decorator'
 import ProductPresentation from '~/components/products/ProductPresentation.vue'
 import ListImage from '~/components/products/ListImage.vue'
+import PricingBlock from '~/components/products/PricingBlock.vue'
+import config from '~/improvize.config'
 
 @Component({
-  components: { ProductPresentation, ListImage }
+  components: { PricingBlock, ProductPresentation, ListImage }
 })
 export default class LeSage extends Vue {
+  get pricing () {
+    return config.lesagePricing
+  }
 }
 
 </script>
