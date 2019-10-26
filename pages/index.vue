@@ -118,10 +118,6 @@ export default class LandingPage extends Vue {
 @import "~@/assets/styles/variables";
 
 .home {
-  .padded {
-    padding: 0 180px;
-  }
-
   .software-solutions {
     min-height: 730px;
     display: flex;

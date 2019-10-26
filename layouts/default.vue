@@ -59,4 +59,8 @@ h1, h2 {
 h3 {
   font-size: $f35;
 }
+
+.padded {
+  padding: 0 180px;
+}
 </style>

@@ -1,12 +1,16 @@
 <template>
-  <div class="container">
-    {{ $t('title') }}
-  </div>
+  <main>
+    <product-presentation />
+  </main>
 </template>
 
 <script>
-import { Vue } from 'nuxt-property-decorator'
+import { Vue, Component } from 'nuxt-property-decorator'
+import ProductPresentation from '~/components/products/ProductPresentation.vue'
 
+@Component({
+  components: { ProductPresentation }
+})
 export default class LeSage extends Vue {
 }
 

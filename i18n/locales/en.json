@@ -56,5 +56,10 @@
     "support": "We are ready to assist you every time you need us. We use any desk to access and control computers anywhere.",
     "training": "We are certified training company. In person or on the phone we can explain all the aspects of the software so you and your team can be a 100% autonomous.",
     "more": "Learn more"
+  },
+  "products": {
+    "lesage": {
+      "presentation": "Le Sage is the swiss army knife of publishers. Designed with care, for and with the help of music professionals, it is your every day companion. \n\nIntuitive and flexible, this piece of software is capable of executing precise actions on massive flows of data very fast. Whatever the complexity of your contracts, the size of your catalogues, the diversity of your clients and their systems, Le Sage normalizes data, detects inconsistencies and delivers compliant registrations and accurate statements."
+    }
   }
 }
