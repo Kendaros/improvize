@@ -20,7 +20,7 @@
             class="link"
           >
             <sub-item
-              :img-url="`${group.title}/${submenuItem}`"
+              :img-path="`${group.title}/${submenuItem}`"
               :title="$t(`menu.${submenuItem}`)"
               :description="$t(`menu.descriptions.${submenuItem}`)"
             />

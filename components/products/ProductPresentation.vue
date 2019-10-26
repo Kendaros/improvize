@@ -5,20 +5,20 @@
     <div class="left">
       <div class="wrapper">
         <h1 class="title">
-          {{ $t('menu.lesage') }}
+          {{ title }}
         </h1>
         <h2 class="subtitle">
-          {{ $t('menu.descriptions.lesage') }}
+          {{ subtitle }}
         </h2>
         <p
           class="text"
-          v-html="$t('products.lesage.presentation').replace(/\n/g, '<br>')"
+          v-html="description"
         />
       </div>
     </div>
     <div class="right">
       <img
-        src="../../assets/img/products/lesage.svg"
+        :src="require(`../../assets/img/${imgPath}.svg`)"
         alt="Le Sage"
         class="image"
       >
@@ -27,10 +27,15 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'nuxt-property-decorator'
+import { Vue, Component, Prop } from 'nuxt-property-decorator'
 
 @Component
-export default class ProductPresentation extends Vue {}
+export default class ProductPresentation extends Vue {
+  @Prop() title!: string
+  @Prop() subtitle!: string
+  @Prop() description!: string
+  @Prop() imgPath!: string
+}
 </script>
 
 <style lang="scss" scoped>

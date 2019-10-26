@@ -1,11 +1,11 @@
 <template>
   <div class="nav-bar-submenu-item">
     <div
-      v-if="getImage(imgUrl)"
+      v-if="getImage(imgPath)"
       class="left"
     >
       <img
-        :src="getImage(imgUrl)"
+        :src="getImage(imgPath)"
         :alt="title"
         class="image"
       >
@@ -30,7 +30,7 @@ declare function require(name: string): any
 
 @Component
 export default class NavBarSubmenuItem extends Vue {
-  @Prop() imgUrl!: string
+  @Prop() imgPath!: string
   @Prop() title!: string
   @Prop() description!: string
 

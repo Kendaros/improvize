@@ -1,6 +1,11 @@
 <template>
   <main>
-    <product-presentation />
+    <product-presentation
+      :title="$t('menu.lesage')"
+      :subtitle="$t('menu.descriptions.lesage')"
+      :description="$t('products.lesage.presentation').replace(/\n/g, '<br>')"
+      img-path="products/lesage"
+    />
   </main>
 </template>
 
