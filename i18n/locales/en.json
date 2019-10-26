@@ -21,7 +21,21 @@
     "who-we-are": "Who we are",
     "contact-us": "Contact us",
     "careers": "Careers",
-    "clients": "Our clients"
+    "clients": "Our clients",
+    "descriptions": {
+      "lesage": "Software solution for music publishers",
+      "inpro": "Management software designed for labels & producers",
+      "cloud-hosting": "Servers to host and backup your data",
+      "support": "Ready to assist you every time you need us",
+      "training": "We are a certified training company",
+      "documentation": "",
+      "issue-tracking": "",
+      "versioning": "",
+      "who-we-are": "",
+      "contact-us": "",
+      "careers": "",
+      "clients": ""
+    }
   },
   "contact-us": {
     "title": "Do you want to know more?",

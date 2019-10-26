@@ -2,24 +2,28 @@
   <nav class="main-nav">
     <ul class="menu">
       <li
-        v-for="menuItem in groups"
-        :key="menuItem.title"
+        v-for="group in groups"
+        :key="group.title"
         class="menu-item"
-        @mouseenter="toggleSubmenu(menuItem.title)"
+        @mouseenter="toggleSubmenu(group.title)"
         @mouseleave="toggleSubmenu('')"
       >
-        {{ $t(`menu.${menuItem.title}`) }}
+        {{ $t(`menu.${group.title}`) }}
         <div
-          v-if="activeCategory === menuItem.title"
+          v-if="activeCategory === group.title"
           class="submenu"
         >
           <n-link
-            v-for="submenuItem in menuItem.links"
+            v-for="submenuItem in group.links"
             :key="submenuItem"
-            :to="{ name: `${menuItem.title}-${submenuItem}___${$route.name.slice(-2)}` }"
+            :to="{ name: `${group.title}-${submenuItem}___${$route.name.slice(-2)}` }"
             class="link"
           >
-            <sub-item />
+            <sub-item
+              :img-url="`${group.title}/${submenuItem}`"
+              :title="$t(`menu.${submenuItem}`)"
+              :description="$t(`menu.descriptions.${submenuItem}`)"
+            />
           </n-link>
         </div>
       </li>
@@ -28,7 +32,7 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component } from 'nuxt-property-decorator'
+import { Vue, Component, Watch } from 'nuxt-property-decorator'
 import SubItem from '~/components/NavBarSubmenuItem.vue'
 import config from '~/improvize.config'
 import { Category } from '~/utils/interfaces'
@@ -38,6 +42,11 @@ import { Category } from '~/utils/interfaces'
 })
 export default class NavBar extends Vue {
   activeCategory: string = ''
+
+  @Watch('$route')
+  onRouteChanged () {
+    this.activeCategory = ''
+  }
 
   get groups (): Array<Category> {
     return config.menu
@@ -76,8 +85,13 @@ export default class NavBar extends Vue {
     background: #FFFFFF;
 
     .link {
+      display: block;
       color: $font_dark_color;
       text-decoration: none;
+
+      & + .link {
+        border-top: 1px solid #ebebeb;
+      }
     }
   }
 }

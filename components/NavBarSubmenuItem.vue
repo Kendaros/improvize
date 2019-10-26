@@ -1,28 +1,47 @@
 <template>
   <div class="nav-bar-submenu-item">
-    <div class="left">
+    <div
+      v-if="getImage(imgUrl)"
+      class="left"
+    >
       <img
-        src="../assets/img/products/lesage.svg"
-        alt="LeSage"
+        :src="getImage(imgUrl)"
+        :alt="title"
         class="image"
       >
     </div>
     <div class="right">
       <div class="title">
-        Le Sage
+        {{ title }}
       </div>
-      <div class="description">
-        Software solution for music publishers
+      <div
+        v-if="description !== ''"
+        class="description"
+      >
+        {{ description }}
       </div>
     </div>
   </div>
 </template>
 
-<script>
-import { Vue, Component } from 'nuxt-property-decorator'
+<script lang="ts">
+import { Vue, Component, Prop } from 'nuxt-property-decorator'
+declare function require(name: string)
 
-@Component()
-export default class NavBarSubmenuItem extends Vue {}
+@Component
+export default class NavBarSubmenuItem extends Vue {
+  @Prop() imgUrl!: string
+  @Prop() title!: string
+  @Prop() description!: string
+
+  getImage (path): any {
+    try {
+      return require(`../assets/img/${path}.svg`)
+    } catch {
+      return null
+    }
+  }
+}
 </script>
 
 <style lang="scss">
@@ -44,16 +63,15 @@ export default class NavBarSubmenuItem extends Vue {}
   & > .right {
     & > .title {
       font-weight: bold;
-      margin-bottom: 5px;
+    }
+
+    & > .description {
+      margin-top: 5px;
     }
   }
 
   &:hover {
     cursor: pointer;
-  }
-
-  & + .nav-bar-submenu-item {
-    border-top: 1px solid #ebebeb;
   }
 }
 
