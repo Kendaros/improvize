@@ -48,7 +48,7 @@
           :key="`software-${software}`"
           :title="$t(`menu.${software}`)"
           :text="$t(`softwares.${software}`)"
-          :img-src="require(`~/assets/img/softwares/${software}.svg`)"
+          :img-src="require(`~/assets/img/products/${software}.svg`)"
           :img-alt="$t(`menu.${software}`)"
           img-width="121"
           :btn-text="$t('softwares.discover', { software: $t(`menu.${software}`) })"
