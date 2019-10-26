@@ -12,9 +12,11 @@
       alt=""
     >
     <list-image
-      :title="$t('products.lesage.block-1.title')"
-      :list="$t('products.lesage.block-1.list')"
-      img-path="products/lesage/lesage-01.svg"
+      v-for="n in 5"
+      :key="`products-lesage-block-${n}`"
+      :title="$t(`products.lesage.block-${n}.title`)"
+      :list="$t(`products.lesage.block-${n}.list`)"
+      :img-path="`products/lesage/block-${n}`"
     />
   </main>
 </template>
@@ -44,6 +46,17 @@ export default class LeSage extends Vue {
 
   > .list-image {
     margin-top: 120px;
+
+    &:nth-child(even) {
+      > .left {
+        order: 2;
+      }
+
+      > .right {
+        order: 1;
+        text-align: left;
+      }
+    }
   }
 }
 </style>

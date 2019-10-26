@@ -67,6 +67,18 @@
       "block-2": {
         "title": "CWR",
         "list": "Catalogue imports\nError detection and bulk corrections\nPRO registration and transmission to sub publishers\nAcknowledgements processing (ACK, rejections, assigned codes)"
+      },
+      "block-3": {
+        "title": "Royalty statements",
+        "list": "Payout definition may be done work by work or for a whole group\nFine management of special cases\nAutomatic payout errors detection\nMultilingual statements\nStatement summaries\nStatement exports (PDF, Excel, other software...)\nFinancial control : advances, payments, postponements\nAggregated statements\nHeirdom and sub-accounts"
+      },
+      "block-4": {
+        "title": "Reporting / Audit",
+        "list": "Top earners, works profitability, tailor-made queries, ... \nSegmentation of results by clients, catalogues, groups of works, ...\nPivots : free grouping of data rows and columns\nExport results to Excel"
+      },
+      "block-5": {
+        "title": "Quality assurance",
+        "list": "Ongoing improvement : about 80 versions per year\nDevelopment ethics : listening, collaborative, intuitivity, flexibility\nCompatibility : import/export data filters\nDedicated technical support / Training\nBug tracking system"
       }
     }
   }
