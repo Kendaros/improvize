@@ -42,19 +42,19 @@ export default class ProductPresentation extends Vue {
 @import '~/assets/styles/variables.scss';
 
 .product-presentation {
-  min-height: 730px;
+  margin: 115px 0;
   display: flex;
 
-  .left {
+  > .left {
     flex: 2;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 
-    .wrapper {
+    > .wrapper {
       max-width: 524px;
 
-      .subtitle {
+      > .subtitle {
         margin-top: 5px;
         font-family: $helvetica_neue;
         font-weight: normal;
@@ -62,20 +62,20 @@ export default class ProductPresentation extends Vue {
         line-height: 1.5;
       }
 
-      .text {
+      > .text {
         margin-top: 40px;
         line-height: 1.5;
       }
     }
   }
 
-  .right {
+  > .right {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    .image {
+    > .image {
       width: 306px;
     }
   }
