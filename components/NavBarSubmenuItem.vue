@@ -26,7 +26,7 @@
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'nuxt-property-decorator'
-declare function require(name: string)
+declare function require(name: string): any
 
 @Component
 export default class NavBarSubmenuItem extends Vue {
@@ -34,7 +34,7 @@ export default class NavBarSubmenuItem extends Vue {
   @Prop() title!: string
   @Prop() description!: string
 
-  getImage (path): any {
+  getImage (path: string): any {
     try {
       return require(`../assets/img/${path}.svg`)
     } catch {
