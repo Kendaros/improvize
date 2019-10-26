@@ -26,33 +26,13 @@
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
-
-interface Category {
-  title: string,
-  links: Array<string>
-}
+import { Category } from '~/utils/interfaces'
+import config from '~/improvize.config'
 
 @Component
 export default class SiteMap extends Vue {
   get groups (): Array<Category> {
-    return [
-      {
-        title: 'products',
-        links: ['lesage', 'inpro']
-      },
-      {
-        title: 'services',
-        links: ['cloud-hosting', 'support', 'training']
-      },
-      {
-        title: 'resources',
-        links: ['documentation', 'issue-tracking', 'versioning']
-      },
-      {
-        title: 'about',
-        links: ['who-we-are', 'clients']
-      }
-    ]
+    return config.menu
   }
 }
 </script>
