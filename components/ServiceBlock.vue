@@ -16,7 +16,7 @@
       :to="{ name: `${moreRoute}___${$route.name.slice(-2)}` }"
       class="more"
     >
-      {{ $t('services.more') }}
+      {{ $t('general.learn-more') }}
     </n-link>
   </div>
 </template>

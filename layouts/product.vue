@@ -28,10 +28,6 @@ main.product {
     margin: 115px auto;
   }
 
-  > .bg-gradient {
-    width: 100%;
-  }
-
   > .list-image {
     margin-top: 120px;
 

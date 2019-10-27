@@ -79,6 +79,7 @@ $pricing-block-item-padding: 33px;
 
   > .features {
     margin: 46px $pricing-block-item-padding 40px;
+    text-align: left;
 
     > .feature {
       list-style-image: url('../../assets/img/check.svg');

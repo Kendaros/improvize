@@ -65,4 +65,8 @@ h3 {
   max-width: 1440px;
   margin: 0 auto;
 }
+
+.bg-gradient {
+  width: 100%;
+}
 </style>

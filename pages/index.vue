@@ -23,6 +23,12 @@
       </div>
     </section>
 
+    <img
+      class="bg-gradient"
+      src="../assets/img/bg-gradient.svg"
+      alt=""
+    >
+
     <section class="they-trust-us padded inside-the-grid">
       <h3 class="title">
         {{ $t('general.they-trust-us') }}
@@ -119,7 +125,7 @@ export default class LandingPage extends Vue {
 
 .home {
   .software-solutions {
-    min-height: 730px;
+    margin-top: 80px;
     display: flex;
 
     .left {
@@ -156,6 +162,7 @@ export default class LandingPage extends Vue {
 
   .they-trust-us {
     text-align: center;
+    margin-top: 120px;
     margin-bottom: 150px;
 
     > .title {
