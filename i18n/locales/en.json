@@ -119,5 +119,41 @@
         }
       }
     }
+  },
+  "about": {
+    "who-we-are": {
+      "title": "Why Improvize ?",
+      "description": "In everyday language improvise means “making the best of things with the means you have at your disposal”.",
+      "left-text": "The word has a negative connotation as it is often used when work is done hurriedly, in a rush. \nIn a perfect world, receiving a catalogue of works, filing it, collecting royalties from a multitude of sources, analysing and paying them etc... would be a simple task. In real life however, files arrive at the last minute, are not in the correct format and codes are not universal... ",
+      "right-text": "Our software solutions are not designed like sheet music that have to be followed note by note. On the contrary, we think of them as instruments you can use in ways adapted to any situation. Anyone familiar with music knows how important improvisation is, as the Holy Grail of the musician. It demands a simultaneous knowledge of theory, a command of an instrument and a capacity to create something new with others.",
+      "team": {
+        "title": "Our team",
+        "boggio": {
+          "fullname": "Jean-Christophe Boggio",
+          "occupation": "CEO & DEVELOPER",
+          "bio": "Jean-Christophe has been writing custom made software since 1987 and specifically for the music industry since 1992. He is the main developer of Le Sage and Inpro."
+        },
+        "louyot": {
+          "fullname": "Emily Louyot",
+          "occupation": "BUSINESS DEVELOPER",
+          "bio": "Emily has joined the team in 2018. Law graduate, she is in charge of customer relationship and business development. She speaks French, English, Spanish and German."
+        }
+      },
+      "philosophy": {
+        "title": "Our philosophy",
+        "methods": {
+          "title": "Your job : \nyour methods",
+          "text": "We don't pretend to know your job better than you do. We are not making software that enslave you by imposing its own way of doing things. \nOn the contrary, we create tools that let you work your way, releasing you from repetitive tasks. You will discover that there are often several ways of doing things. The « right » method is your method."
+        },
+        "cooperation": {
+          "title": "We value\ncooperation",
+          "text": "We believe the world works better when we work together. \n\nThis is why we have opted for a collaborative development model : all enhancements asked by someone benefit to everyone. \nWe also have various solutions to securely let your team have access to your data wherever they are."
+        },
+        "here": {
+          "title": "We are \nalways here",
+          "text": "Our relationship does not end when you buy one of our licences : \n\nWe assist and support you every time you need us ;\n\t• \tdocumentation is available online ;\n\t• \twe organize, once a year, a one day workshop where we explain thoroughly each new feature."
+        }
+      }
+    }
   }
 }
