@@ -49,18 +49,23 @@
   },
   "home": {
     "title": "Software solutions for music administration",
-    "description": "Offering tools to ease music administration for publishers, subpublishers, labels and independants"
+    "description": "Offering tools to ease music administration for publishers, subpublishers, labels and independants",
+    "softwares": {
+      "lesage": "Software solution for music publishers",
+      "inpro": "Management software designed for labels & producers",
+      "discover": "Discover {software}"
+    },
+    "services": {
+      "cloud-hosting": "We have powerful servers to host and backup your data and let you access them securely.",
+      "support": "We are ready to assist you every time you need us. We use any desk to access and control computers anywhere.",
+      "training": "We are certified training company. In person or on the phone we can explain all the aspects of the software so you and your team can be a 100% autonomous."
+    }
   },
-  "softwares": {
-    "lesage": "Software solution for music publishers",
-    "inpro": "Management software designed for labels & producers",
-    "discover": "Discover {software}"
-  },
-  "services": {
+  "serviceas": {
     "cloud-hosting": "We have powerful servers to host and backup your data and let you access them securely.",
     "support": "We are ready to assist you every time you need us. We use any desk to access and control computers anywhere.",
     "training": "We are certified training company. In person or on the phone we can explain all the aspects of the software so you and your team can be a 100% autonomous.",
-    "long-description": {
+    "pages": {
       "cloud-hosting": "We have powerful servers to host and backup your data and let you access them securely.\nThis technology lets you access your databases wherever you are as long as you have internet access (at home, your office, at clients…). It allows your co-workers to work together as if they were in the same room, even if they are hundreds of kilometers away from each others.\n"
     }
   },

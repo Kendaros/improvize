@@ -53,11 +53,11 @@
           v-for="software in softwares"
           :key="`software-${software}`"
           :title="$t(`menu.${software}`)"
-          :text="$t(`softwares.${software}`)"
+          :text="$t(`home.softwares.${software}`)"
           :img-src="require(`~/assets/img/products/${software}.svg`)"
           :img-alt="$t(`menu.${software}`)"
           img-width="121"
-          :btn-text="$t('softwares.discover', { software: $t(`menu.${software}`) })"
+          :btn-text="$t('home.softwares.discover', { software: $t(`menu.${software}`) })"
         />
       </div>
     </section>
@@ -71,7 +71,7 @@
           v-for="service in services"
           :key="`service-${service}`"
           :title="$t(`menu.${service}`)"
-          :text="$t(`services.${service}`)"
+          :text="$t(`home.services.${service}`)"
           :img-src="require(`~/assets/img/services/${service}.svg`)"
           :img-alt="$t('menu.services')"
           img-width="45"
