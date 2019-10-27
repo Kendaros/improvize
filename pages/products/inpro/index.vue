@@ -1,5 +1,8 @@
 <template>
   <main class="product">
+    <warning-bar
+      :text="$t('warning.not-ready')"
+    />
     <product-presentation
       class="inside-the-grid"
       :title="$t('menu.inpro')"
@@ -21,13 +24,14 @@
 
 <script>
 import { Vue, Component } from 'nuxt-property-decorator'
+import WarningBar from '~/components/WarningBar.vue'
 import ProductPresentation from '~/components/products/ProductPresentation.vue'
 import ListImage from '~/components/products/ListImage.vue'
 import PricingBlock from '~/components/products/PricingBlock.vue'
 import config from '~/improvize.config'
 
 @Component({
-  components: { PricingBlock, ProductPresentation, ListImage }
+  components: { PricingBlock, ProductPresentation, ListImage, WarningBar }
 })
 export default class Inpro extends Vue {
   layout () {
