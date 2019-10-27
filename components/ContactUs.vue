@@ -6,9 +6,14 @@
     <div class="text">
       {{ $t('contact-us.text') }}
     </div>
-    <rect-button
-      :text="$t('menu.contact-us')"
-    />
+    <a
+      href="mailto:info@improvize.eu"
+      class="link"
+    >
+      <rect-button
+        :text="$t('menu.contact-us')"
+      />
+    </a>
   </section>
 </template>
 
@@ -33,17 +38,21 @@ export default class ContactUs extends Vue {}
   align-items: center;
   flex-direction: column;
 
-  .title {
+  > .title {
     font-family: $miso;
     font-size: $f60;
   }
 
-  .text {
+  > .text {
     font-size: $f22;
     line-height: $f33;
     max-width: 647px;
     text-align: center;
     margin: 38px 0 50px;
+  }
+
+  > .link {
+    text-decoration: none;
   }
 }
 </style>

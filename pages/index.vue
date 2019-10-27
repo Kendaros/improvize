@@ -9,9 +9,14 @@
           <p class="text">
             {{ $t('home.description') }}
           </p>
-          <rect-button
-            :text="$t('menu.contact-us')"
-          />
+          <a
+            href="mailto:info@improvize.eu"
+            class="link"
+          >
+            <rect-button
+              :text="$t('menu.contact-us')"
+            />
+          </a>
         </div>
       </div>
       <div class="right">
@@ -58,6 +63,7 @@
           :img-alt="$t(`menu.${software}`)"
           img-width="121"
           :btn-text="$t('home.softwares.discover', { software: $t(`menu.${software}`) })"
+          :link="`products-${software}___${$route.name.slice(-2)}`"
         />
       </div>
     </section>
@@ -124,7 +130,7 @@ export default class LandingPage extends Vue {
 @import "~@/assets/styles/variables";
 
 .home {
-  .software-solutions {
+  > .software-solutions {
     margin-top: 80px;
     display: flex;
 
@@ -145,6 +151,10 @@ export default class LandingPage extends Vue {
           margin-bottom: 50px;
           line-height: 1.5;
         }
+
+        > .link {
+          text-decoration: none;
+        }
       }
     }
 
@@ -160,7 +170,7 @@ export default class LandingPage extends Vue {
     }
   }
 
-  .they-trust-us {
+  > .they-trust-us {
     text-align: center;
     margin-top: 120px;
     margin-bottom: 150px;
@@ -184,7 +194,7 @@ export default class LandingPage extends Vue {
     }
   }
 
-  .softwares {
+  > .softwares {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -206,7 +216,7 @@ export default class LandingPage extends Vue {
     }
   }
 
-  .services {
+  > .services {
     min-height: 552px;
     background-image: linear-gradient(to bottom, rgba(248, 246, 255, 0), rgba(75, 121, 234, 0.06));
 

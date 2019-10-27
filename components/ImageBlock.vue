@@ -12,9 +12,14 @@
     <div class="text">
       {{ text }}
     </div>
-    <rect-button
-      :text="btnText"
-    />
+    <n-link
+      :to="{ name: link }"
+      class="link"
+    >
+      <rect-button
+        :text="btnText"
+      />
+    </n-link>
   </div>
 </template>
 
@@ -31,6 +36,7 @@ export default class ImageBlock extends Vue {
   @Prop() imgSrc!: string
   @Prop() imgAlt!: string
   @Prop() imgWidth!: number
+  @Prop() link!: string
   @Prop() btnText!: string
 }
 </script>
@@ -64,6 +70,10 @@ export default class ImageBlock extends Vue {
   > .text {
     margin-bottom: 30px;
     line-height: $f26;
+  }
+
+  > .link {
+    text-decoration: none;
   }
 }
 </style>

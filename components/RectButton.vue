@@ -1,7 +1,6 @@
 <template>
   <div
     class="button"
-    @click="mailTo"
   >
     <span>{{ text }}</span>
   </div>
@@ -13,10 +12,6 @@ import { Vue, Component, Prop } from 'nuxt-property-decorator'
 @Component
 export default class RectButton extends Vue {
   @Prop() text!: string
-
-  mailTo () {
-    window.location.href = 'mailto:info@improvize.eu'
-  }
 }
 </script>
 

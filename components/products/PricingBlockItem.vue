@@ -27,10 +27,15 @@
         {{ item }}
       </li>
     </ul>
-    <rect-button
-      v-if="button"
-      :text="$t('contact-us.button')"
-    />
+    <a
+      href="mailto:info@improvize.eu"
+      class="link"
+    >
+      <rect-button
+        v-if="button"
+        :text="$t('contact-us.button')"
+      />
+    </a>
   </div>
 </template>
 
@@ -101,8 +106,12 @@ $pricing-block-item-padding: 33px;
     }
   }
 
-  > .button {
-    margin-bottom: 10px;
+  > .link {
+    text-decoration: none;
+
+    > .button {
+      margin-bottom: 10px;
+    }
   }
 }
 </style>
