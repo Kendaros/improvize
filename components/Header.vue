@@ -1,5 +1,5 @@
 <template>
-  <header class="main-header">
+  <header class="main-header padded">
     <div class="logo">
       <n-link to="/">
         <img src="../assets/img/logo.svg" alt="Improvize logo">
@@ -25,7 +25,6 @@ export default class Header extends Vue {}
 .main-header {
   height: 80px;
   padding: 0 $padding-xl;
-
   display: flex;
   align-items: center;
 

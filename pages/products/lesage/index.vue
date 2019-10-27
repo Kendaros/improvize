@@ -1,6 +1,7 @@
 <template>
   <main class="products-lesage">
     <product-presentation
+      class="inside-the-grid"
       :title="$t('menu.lesage')"
       :subtitle="$t('menu.descriptions.lesage')"
       :description="$t('products.lesage.presentation').replace(/\n/g, '<br>')"
@@ -12,6 +13,7 @@
       alt=""
     >
     <list-image
+      class="inside-the-grid"
       v-for="n in 5"
       :key="`products-lesage-block-${n}`"
       :title="$t(`products.lesage.block-${n}.title`)"
@@ -45,7 +47,7 @@ export default class LeSage extends Vue {
 <style lang="scss">
 .products-lesage {
   > .product-presentation {
-    margin: 115px 0;
+    margin: 115px auto;
   }
 
   > .bg-gradient {

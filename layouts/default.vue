@@ -1,6 +1,8 @@
 <template>
   <div>
-    <impro-header />
+    <impro-header
+      class="inside-the-grid"
+    />
     <nuxt />
     <contact-us />
     <impro-footer />
@@ -42,11 +44,6 @@ html {
   margin: 0;
 }
 
-body {
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
 h1, h2, h3, h4, h5, h6 {
   font-family: $miso;
 }
@@ -62,5 +59,10 @@ h3 {
 
 .padded {
   padding: 0 180px;
+}
+
+.inside-the-grid {
+  max-width: 1440px;
+  margin: 0 auto;
 }
 </style>

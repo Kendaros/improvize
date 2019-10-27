@@ -1,9 +1,11 @@
 <template>
   <footer class="main-footer">
-    <div class="logo">
-      <img src="../assets/img/logo-simple.svg" alt="Improvize logo">
+    <div class="footer-wrapper inside-the-grid padded">
+      <div class="logo">
+        <img src="../assets/img/logo-simple.svg" alt="Improvize logo">
+      </div>
+      <site-map />
     </div>
-    <site-map />
   </footer>
 </template>
 
@@ -22,15 +24,17 @@ export default class Footer extends Vue {}
 
 .main-footer {
   height: 350px;
-  padding: 0 $padding-xl;
   background-image: linear-gradient(to bottom, rgba(248, 246, 255, 0), rgba(75, 121, 234, 0.06));
 
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  & > .footer-wrapper {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 
-  .logo {
-    width: 78px;
+    & > .logo {
+      width: 78px;
+    }
   }
 }
 </style>

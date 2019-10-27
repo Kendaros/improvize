@@ -1,5 +1,5 @@
 <template>
-  <section class="pricing padded">
+  <section class="pricing">
     <h2 class="title">
       Pricing
     </h2>
@@ -12,6 +12,9 @@
         :features="$t(`products.lesage.pricing.${item.title}.features`)"
         :button="item.button"
       />
+    </div>
+    <div class="link">
+
     </div>
   </section>
 </template>

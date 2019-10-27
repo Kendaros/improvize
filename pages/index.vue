@@ -1,6 +1,6 @@
 <template>
   <main class="home">
-    <section class="software-solutions padded">
+    <section class="software-solutions padded inside-the-grid">
       <div class="left">
         <div class="wrapper">
           <h1 class="title">
@@ -23,7 +23,7 @@
       </div>
     </section>
 
-    <section class="they-trust-us padded">
+    <section class="they-trust-us padded inside-the-grid">
       <h3 class="title">
         {{ $t('general.they-trust-us') }}
       </h3>
@@ -38,7 +38,7 @@
       </div>
     </section>
 
-    <section class="softwares padded">
+    <section class="softwares padded inside-the-grid">
       <h2 class="title">
         {{ $t('general.softwares') }}
       </h2>
