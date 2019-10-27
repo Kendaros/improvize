@@ -2,7 +2,8 @@
   "title": "Hello!",
   "general": {
     "they-trust-us": "They trust us",
-    "softwares": "Softwares"
+    "softwares": "Softwares",
+    "technical-assistance": "Technical assistance"
   },
   "warning": {
     "not-ready": "That page isn’t quite ready yet, but stay tuned or contact us to have more informations."
