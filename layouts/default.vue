@@ -58,7 +58,15 @@ h3 {
 }
 
 .padded {
-  padding: 0 180px;
+  padding: 0 $padding-xl;
+
+  @media screen and (max-width: $break-md) {
+    padding: 0 $padding-md;
+  }
+
+  @media screen and (max-width: $break-sm) {
+    padding: 0 $padding-sm
+  }
 }
 
 .inside-the-grid {

@@ -22,13 +22,11 @@
         </li>
       </ul>
     </div>
-    <div class="right">
-      <img
-        :src="getImage(imgPath)"
-        :alt="title"
-        class="image"
-      >
-    </div>
+    <img
+      :src="getImage(imgPath)"
+      :alt="title"
+      class="right image"
+    >
   </section>
 </template>
 
@@ -88,12 +86,8 @@ export default class ProductPresentation extends Vue {
   }
 
   > .right {
-    flex: 1;
+    flex: 0 1 432px;
     text-align: right;
-
-    > .image {
-      width: 432px;
-    }
   }
 }
 </style>

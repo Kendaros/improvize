@@ -24,7 +24,6 @@ export default class Header extends Vue {}
 
 .main-header {
   height: 80px;
-  padding: 0 $padding-xl;
   display: flex;
   align-items: center;
 

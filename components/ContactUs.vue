@@ -1,5 +1,5 @@
 <template>
-  <section class="contact-us">
+  <section class="contact-us padded">
     <h4 class="title">
       {{ $t('contact-us.title') }}
     </h4>
