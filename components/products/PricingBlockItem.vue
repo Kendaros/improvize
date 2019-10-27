@@ -37,7 +37,7 @@ export default class PricingBlockItem extends Vue {
   @Prop() title!: string
   @Prop() price!: number
   @Prop({ default: '' }) features!: string
-  @Prop({ default: false }) button: boolean
+  @Prop({ default: false }) button!: boolean
 }
 </script>
 

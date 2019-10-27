@@ -13,9 +13,6 @@
         :button="item.button"
       />
     </div>
-    <div class="link">
-
-    </div>
   </section>
 </template>
 

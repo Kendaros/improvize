@@ -1,5 +1,5 @@
 <template>
-  <main class="products-lesage">
+  <main class="product">
     <product-presentation
       class="inside-the-grid"
       :title="$t('menu.lesage')"
@@ -13,12 +13,12 @@
       alt=""
     >
     <list-image
-      class="inside-the-grid"
       v-for="n in 5"
       :key="`products-lesage-block-${n}`"
       :title="$t(`products.lesage.block-${n}.title`)"
       :list="$t(`products.lesage.block-${n}.list`)"
       :img-path="`products/lesage/block-${n}`"
+      class="inside-the-grid"
     />
     <pricing-block
       :pricing="pricing"
@@ -37,6 +37,10 @@ import config from '~/improvize.config'
   components: { PricingBlock, ProductPresentation, ListImage }
 })
 export default class LeSage extends Vue {
+  layout () {
+    return 'product'
+  }
+
   get pricing () {
     return config.lesagePricing
   }
@@ -45,28 +49,4 @@ export default class LeSage extends Vue {
 </script>
 
 <style lang="scss">
-.products-lesage {
-  > .product-presentation {
-    margin: 115px auto;
-  }
-
-  > .bg-gradient {
-    width: 100%;
-  }
-
-  > .list-image {
-    margin-top: 120px;
-
-    &:nth-child(even) {
-      > .left {
-        order: 2;
-      }
-
-      > .right {
-        order: 1;
-        text-align: left;
-      }
-    }
-  }
-}
 </style>

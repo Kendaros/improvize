@@ -5,5 +5,6 @@ export interface Category {
 
 export interface Pricing {
   title: string,
-  price: number
+  price: number,
+  button: boolean
 }
