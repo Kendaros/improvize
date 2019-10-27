@@ -1,5 +1,6 @@
 import messages from './i18n/messages'
 import numberFormats from './i18n/numberFormats'
+import config from './improvize.config'
 
 export default {
   mode: 'universal',
@@ -46,7 +47,7 @@ export default {
     [
       'nuxt-i18n',
       {
-        locales: ['en', 'fr'],
+        locales: config.languages,
         defaultLocale: 'en',
         vueI18n: {
           fallbackLocale: 'en',
