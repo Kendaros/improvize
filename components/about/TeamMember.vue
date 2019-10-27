@@ -25,7 +25,7 @@ declare function require(path: string): any
 export default class TeamMember extends Vue {
   @Prop() name!: string
 
-  getImage (path):any {
+  getImage (path: string): any {
     try {
       return require(`../../assets/img/team/${path}.png`)
     } catch {

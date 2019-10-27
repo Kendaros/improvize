@@ -37,20 +37,38 @@
         />
       </div>
     </div>
+
+    <div class="philosophy padded">
+      <h2 class="title">{{ $t('about.who-we-are.philosophy.title') }}</h2>
+      <div class="philosophy-wrapper">
+        <philosophy-item
+          v-for="philosophy in philosophies"
+          :key="philosophy"
+          :title="$t(`about.who-we-are.philosophy.${philosophy}.title`)"
+          :text="$t(`about.who-we-are.philosophy.${philosophy}.text`)"
+          :imgPath="philosophy"
+        />
+      </div>
+    </div>
   </main>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
 import TeamMember from '~/components/about/TeamMember.vue'
+import PhilosophyItem from '~/components/about/PhilosophyItem.vue'
 import config from '~/improvize.config'
 
 @Component({
-  components: { TeamMember }
+  components: { TeamMember, PhilosophyItem }
 })
 export default class WhoWeAre extends Vue {
   get teamMembers (): Array<string> {
     return config.members
+  }
+
+  get philosophies (): Array<string> {
+    return config.philosophy
   }
 }
 
@@ -101,6 +119,35 @@ export default class WhoWeAre extends Vue {
       justify-content: space-around;
       flex-wrap: wrap;
     }
+  }
+
+  > .philosophy {
+    margin-top: 150px;
+    text-align: center;
+
+    > .title {
+      margin-bottom: 60px;
+    }
+
+    > .philosophy-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      text-align: center;
+
+      > .philosophy-item {
+        margin: 30px 10px 0;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+
   }
 }
 </style>
