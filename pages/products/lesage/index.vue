@@ -21,6 +21,7 @@
       class="inside-the-grid"
     />
     <pricing-block
+      product-name="lesage"
       :pricing="pricing"
     />
   </main>
@@ -42,7 +43,7 @@ export default class LeSage extends Vue {
   }
 
   get pricing () {
-    return config.lesagePricing
+    return config.pricings.lesage
   }
 }
 

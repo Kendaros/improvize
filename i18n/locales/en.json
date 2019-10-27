@@ -94,6 +94,23 @@
           "features": "Yearly subscription to updates of the software"
         }
       }
+    },
+    "inpro": {
+      "presentation": "Producers, here is the management software designed especially\nfor you. It will help you import your dealers' sales reports and\ncompute royalty statements. Your data are centralized, your\nstatements are ready in time.",
+      "pricing": {
+        "license": {
+          "title": "License",
+          "features": "Unlimited users\nUnlimited databases\n4 hours of technical assistance\nLifetime license\nFirst year's updates"
+        },
+        "young": {
+          "title": "Young Producers/labels",
+          "features": "Unlimited users\nUnlimited databases\n4 hours of technical assistance\nLifetime license\nFirst year's updates"
+        },
+        "updates": {
+          "title": "Updates",
+          "features": "Yearly subscription to updates of the software"
+        }
+      }
     }
   }
 }

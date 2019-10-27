@@ -2,8 +2,10 @@ import { Category, Pricing } from '~/utils/interfaces'
 
 interface ImprovizeConfig {
   menu: Array<Category>,
-  lesagePricing: Array<Pricing>,
-  inproPricing: Array<Pricing>
+  pricings: {
+    lesage: Array<Pricing>,
+    inpro: Array<Pricing>
+  }
 }
 
 const config: ImprovizeConfig = {
@@ -25,35 +27,42 @@ const config: ImprovizeConfig = {
       links: ['who-we-are', 'clients']
     }
   ],
-  lesagePricing: [
-    {
-      title: 'license',
-      price: 5000,
-      button: true
-    },
-    {
-      title: 'registration',
-      price: 900,
-      button: false
-    },
-    {
-      title: 'updates',
-      price: 560,
-      button: false
-    }
-  ],
-  inproPricing: [
-    {
-      title: 'license',
-      price: 5000,
-      button: true
-    },
-    {
-      title: 'registration',
-      price: 900,
-      button: false
-    }
-  ]
+  pricings: {
+    lesage: [
+      {
+        title: 'license',
+        price: 5000,
+        button: true
+      },
+      {
+        title: 'registration',
+        price: 900,
+        button: false
+      },
+      {
+        title: 'updates',
+        price: 560,
+        button: false
+      }
+    ],
+    inpro: [
+      {
+        title: 'license',
+        price: 5000,
+        button: true
+      },
+      {
+        title: 'young',
+        price: 3500,
+        button: true
+      },
+      {
+        title: 'updates',
+        price: 560,
+        button: false
+      }
+    ]
+  }
 }
 
 export default config

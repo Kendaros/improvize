@@ -44,20 +44,27 @@ export default class PricingBlockItem extends Vue {
 <style lang="scss">
 @import "~@/assets/styles/variables";
 
+$pricing-block-item-padding: 33px;
+
 .pricing-block-item {
   width: 343px;
   border-radius: 4px;
   border: solid 1px #e0dfdf;
   background-color: #ffffff;
-  padding: 33px;
+  padding: 33px 0;
 
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
 
+  > .title {
+    text-align: center;
+  }
+
   > .price {
     margin-top: 40px;
+    padding: 0 $pricing-block-item-padding;
 
     > .figure {
       font-family: $miso;
@@ -71,7 +78,7 @@ export default class PricingBlockItem extends Vue {
   }
 
   > .features {
-    margin: 46px 0 40px;
+    margin: 46px $pricing-block-item-padding 40px;
 
     > .feature {
       list-style-image: url('../../assets/img/check.svg');

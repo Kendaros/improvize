@@ -7,9 +7,9 @@
       <pricing-block-item
         v-for="(item, i) in pricing"
         :key="`pricing-block-${i}`"
-        :title="$t(`products.lesage.pricing.${item.title}.title`)"
+        :title="$t(`products.${productName}.pricing.${item.title}.title`)"
         :price="item.price"
-        :features="$t(`products.lesage.pricing.${item.title}.features`)"
+        :features="$t(`products.${productName}.pricing.${item.title}.features`)"
         :button="item.button"
       />
     </div>
@@ -26,6 +26,7 @@ import { Pricing } from '~/utils/interfaces'
 })
 export default class PricingBlock extends Vue {
   @Prop() pricing!: Array<Pricing>
+  @Prop() productName!: string
 }
 </script>
 

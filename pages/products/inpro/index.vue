@@ -12,15 +12,8 @@
       src="../../../assets/img/bg-gradient.svg"
       alt=""
     >
-    <list-image
-      v-for="n in 5"
-      :key="`products-product-block-${n}`"
-      :title="$t(`products.product.block-${n}.title`)"
-      :list="$t(`products.product.block-${n}.list`)"
-      :img-path="`products/product/block-${n}`"
-      class="inside-the-grid"
-    />
     <pricing-block
+      product-name="inpro"
       :pricing="pricing"
     />
   </main>
@@ -42,7 +35,7 @@ export default class Inpro extends Vue {
   }
 
   get pricing () {
-    return config.inproPricing
+    return config.pricings.inpro
   }
 }
 
