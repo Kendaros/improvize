@@ -4,6 +4,11 @@
       <h3 class="title">
         {{ title }}
       </h3>
+      <p
+        v-if="text !== ''"
+        class="text"
+        v-html="text.replace(/\n/g, '<br>')"
+      />
       <ul
         v-if="list !== ''"
         class="list"
@@ -35,8 +40,8 @@ declare function require(path: string): any
 export default class ProductPresentation extends Vue {
   @Prop() title!: string
   @Prop({ default: '' }) list!: string
+  @Prop({ default: '' }) text!: string
   @Prop() imgPath!: string
-  @Prop() imgWidth!: number
 
   getImage (path: string): any {
     try {
@@ -74,6 +79,11 @@ export default class ProductPresentation extends Vue {
       > .list-item {
         padding-left: 10px;
       }
+    }
+
+    > .text {
+      margin-top: 10px;
+      line-height: 1.63;
     }
   }
 

@@ -61,12 +61,29 @@
       "training": "We are certified training company. In person or on the phone we can explain all the aspects of the software so you and your team can be a 100% autonomous."
     }
   },
-  "serviceas": {
-    "cloud-hosting": "We have powerful servers to host and backup your data and let you access them securely.",
-    "support": "We are ready to assist you every time you need us. We use any desk to access and control computers anywhere.",
-    "training": "We are certified training company. In person or on the phone we can explain all the aspects of the software so you and your team can be a 100% autonomous.",
-    "pages": {
-      "cloud-hosting": "We have powerful servers to host and backup your data and let you access them securely.\nThis technology lets you access your databases wherever you are as long as you have internet access (at home, your office, at clients…). It allows your co-workers to work together as if they were in the same room, even if they are hundreds of kilometers away from each others.\n"
+  "services": {
+    "cloud-hosting": {
+      "presentation": "We have powerful servers to host and backup your data and let you access them securely.\nThis technology lets you access your databases wherever you are as long as you have internet access (at home, your office, at clients…). It allows your co-workers to work together as if they were in the same room, even if they are hundreds of kilometers away from each others.",
+      "block-1": {
+        "title": "Security",
+        "text": "Access to your data is secured by a SSL/TLS connection with client and server certificates : each person to which you grant access to your database will have his/her own personal certificate. For each connection :",
+        "list": "The program checks the server’s certificate ;\nThe server checks the user’s certificate ; \nThe server checks that the user has rights to access the database."
+      },
+      "block-2": {
+        "title": "Speed",
+        "text": "The server hosting your data is powerful, has a great amount of memory and is dedicated to data management. It makes your “long” operations (royalty calculations for example) to execute much faster than on a standard office computer.",
+        "list": ""
+      },
+      "block-3": {
+        "title": "Backups",
+        "text": "The databases are backed up every day and these backups are transferred to two different sites. Backups are kept for 15 sliding days.",
+        "list": ""
+      },
+      "block-4": {
+        "title": "Types of servers",
+        "text": "Mutualised\nIt is one server shared amongst other users. Cheaper, but its capacity is divided according to others’ use.\n\nDedicated\nThe server (memory, machine time, discs) is completely dedicated to your use. You can have as many databases as you need.",
+        "list": ""
+      }
     }
   },
   "products": {
