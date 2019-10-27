@@ -11,7 +11,10 @@
     "monthly": "/month",
     "yearly": "/year",
     "hours": "Hours",
-    "price": "Price"
+    "price": "Price",
+    "name": "Name",
+    "date": "Date",
+    "size": "Size"
   },
   "warning": {
     "not-ready": "That page isn’t quite ready yet, but stay tuned or contact us to have more informations."
@@ -29,7 +32,7 @@
     "training": "Training",
     "documentation": "Documentation",
     "issue-tracking": "Issue tracking",
-    "versioning": "Releases",
+    "versioning": "Versioning",
     "who-we-are": "Who we are",
     "contact-us": "Contact us",
     "careers": "Careers",
@@ -67,6 +70,10 @@
       "support": "We are ready to assist you every time you need us. We use any desk to access and control computers anywhere.",
       "training": "We are certified training company. In person or on the phone we can explain all the aspects of the software so you and your team can be a 100% autonomous."
     }
+  },
+  "versioning": {
+    "description": "Download previous versions of our softwares",
+    "history": "See all the history"
   },
   "services": {
     "cloud-hosting": {

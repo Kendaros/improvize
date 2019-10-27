@@ -14,3 +14,26 @@ export interface HourlyPricing {
   hours: number,
   price: number
 }
+
+export interface CloudHostingPricing {
+  shared: Array<Pricing>,
+  dedicated: Array<Pricing>
+}
+
+export interface Downloadable {
+  name: string,
+  date: string,
+  size: string,
+  url: string
+}
+
+export interface Versions {
+  history: VersionsHistory
+  lesage: Array<Downloadable>,
+  inpro: Array<Downloadable>
+}
+
+export interface VersionsHistory {
+  lesage: string,
+  inpro: string
+}

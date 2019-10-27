@@ -1,14 +1,10 @@
-import { Category, Pricing, HourlyPricing } from '~/utils/interfaces'
-
-interface CloudHostingPricing {
-  shared: Array<Pricing>,
-  dedicated: Array<Pricing>
-}
+import { Category, Pricing, HourlyPricing, CloudHostingPricing, Versions } from '~/utils/interfaces'
 
 interface ImprovizeConfig {
   members: Array<string>,
   philosophy: Array<string>,
   menu: Array<Category>,
+  versions: Versions,
   pricings: {
     lesage: Array<Pricing>,
     inpro: Array<Pricing>,
@@ -40,6 +36,76 @@ const config: ImprovizeConfig = {
       links: ['who-we-are', 'clients']
     }
   ],
+  versions: {
+    history: {
+      lesage: 'https://thefreecat.org/logiciels/sage-telechargements-v10/',
+      inpro: 'https://thefreecat.org/inpro-telechargements-v6/'
+    },
+    lesage: [
+      {
+        name: 'Le Sage 10.069b.exe',
+        date: '2019-10-16 09:39:43',
+        size: '54.54 Mb',
+        url: 'https://thefreecat.org/files/lesage/program/v10/Le%20Sage%2010.069b.exe'
+      },
+      {
+        name: 'Le Sage 10.069.exe',
+        date: '2019-10-07 18:39:42',
+        size: '54.54 Mb',
+        url: 'https://thefreecat.org/files/lesage/program/v10/Le%20Sage%2010.069.exe'
+      },
+      {
+        name: 'Le Sage 10.068-64.exe',
+        date: '2019-10-04 12:02:06',
+        size: '57.4 Mb',
+        url: 'https://thefreecat.org/files/lesage/program/v10/Le%20Sage%2010.068-64.exe'
+      },
+      {
+        name: 'Le Sage 10.067b.exe',
+        date: '2019-10-02 13:02:33',
+        size: '54.52 Mb',
+        url: 'https://thefreecat.org/files/lesage/program/v10/Le%20Sage%2010.067b.exe'
+      },
+      {
+        name: 'Le Sage 10.067.exe',
+        date: '2019-10-02 08:17:24',
+        size: '54.52 Mb',
+        url: 'https://thefreecat.org/files/lesage/program/v10/Le%20Sage%2010.067.exe'
+      }
+    ],
+    inpro: [
+      {
+        name: 'InPro 6.088t.exe',
+        date: '2019-10-16 08:00:41',
+        size: '29.45 Mb',
+        url: 'https://thefreecat.org/files/inpro/program/v6/InPro%206.088t.exe'
+      },
+      {
+        name: 'InPro 6.088s.exe',
+        date: '2019-10-10 20:06:02',
+        size: '29.45 Mb',
+        url: 'https://thefreecat.org/files/inpro/program/v6/InPro%206.088s.exe'
+      },
+      {
+        name: 'InPro 6.088r.exe',
+        date: '2019-10-08 17:02:52',
+        size: '29.44 Mb',
+        url: 'https://thefreecat.org/files/inpro/program/v6/InPro%206.088r.exe'
+      },
+      {
+        name: 'InPro 6.088q.exe',
+        date: '2019-10-08 10:42:18',
+        size: '29.44 Mb',
+        url: 'https://thefreecat.org/files/inpro/program/v6/InPro%206.088q.exe'
+      },
+      {
+        name: 'InPro 6.088p.exe',
+        date: '2019-10-07 16:36:44',
+        size: '29.44 Mb',
+        url: 'https://thefreecat.org/files/inpro/program/v6/InPro%206.088p.exe'
+      }
+    ]
+  },
   pricings: {
     lesage: [
       {
