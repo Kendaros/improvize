@@ -8,8 +8,7 @@
         <div class="left">
           {{ $t('about.who-we-are.description') }}
         </div>
-        <div class="right">
-        </div>
+        <div class="right" />
       </div>
       <div class="text">
         <div class="left">
@@ -28,7 +27,9 @@
     >
 
     <div class="our-team padded">
-      <h2 class="title">{{ $t('about.who-we-are.team.title') }}</h2>
+      <h2 class="title">
+        {{ $t('about.who-we-are.team.title') }}
+      </h2>
       <div class="team">
         <team-member
           v-for="member in teamMembers"
@@ -39,14 +40,16 @@
     </div>
 
     <div class="philosophy padded">
-      <h2 class="title">{{ $t('about.who-we-are.philosophy.title') }}</h2>
+      <h2 class="title">
+        {{ $t('about.who-we-are.philosophy.title') }}
+      </h2>
       <div class="philosophy-wrapper">
         <philosophy-item
           v-for="philosophy in philosophies"
           :key="philosophy"
           :title="$t(`about.who-we-are.philosophy.${philosophy}.title`)"
           :text="$t(`about.who-we-are.philosophy.${philosophy}.text`)"
-          :imgPath="philosophy"
+          :img-path="philosophy"
         />
       </div>
     </div>

@@ -15,7 +15,8 @@ interface ImprovizeConfig {
     'cloud-hosting': CloudHostingPricing,
     training: Array<Pricing>,
     support: Array<HourlyPricing>
-  }
+  },
+  clients: Array<string>
 }
 
 const config: ImprovizeConfig = {
@@ -164,7 +165,8 @@ const config: ImprovizeConfig = {
         price: 4500
       }
     ]
-  }
+  },
+  clients: ['22D', 'abpm', 'abribulles', 'absilone', 'alondraMusic', 'alterk', 'audioNetwork', 'budde', 'choke', 'citizenRec', 'cymba', 'echoOrange', 'encoreMerci', 'fingerprints', 'frenchfried', 'glm', 'hamburgerRecords', 'idol', 'joco', 'kitsune', 'melmax', 'metisse', 'musigamy', 'myMajorCompany', 'noformat', 'otodayo', 'outhere', 'peermusic', 'play2', 'royalFlame', 'royMusic', 'sakifo', 'sentinel', 'SNH', 'sutherkane', 'tanitrak', 'teddysound', 'unemusique', 'uptonpark', 'velvetica', 'wtpl', 'zaine']
 }
 
 export default config

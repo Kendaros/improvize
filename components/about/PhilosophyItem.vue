@@ -3,8 +3,11 @@
     <img
       :src="getImage(imgPath)"
       :alt="title"
-      class="image">
-    <h3 class="title">{{ title }}</h3>
+      class="image"
+    >
+    <h3 class="title">
+      {{ title }}
+    </h3>
     <p
       class="text"
       v-html="text.replace(/\n/g, '<br>')"
