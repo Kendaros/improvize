@@ -21,6 +21,7 @@
       class="inside-the-grid"
     />
     <pricing-block
+      category="products"
       product-name="lesage"
       :pricing="pricing"
     />

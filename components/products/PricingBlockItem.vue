@@ -7,6 +7,12 @@
       <span class="figure">{{ price }}€</span>
       <span class="ht">H.T</span>
     </div>
+    <div
+      v-if="monthly"
+      class="monhtly"
+    >
+      {{ $t('general.monthly') }}
+    </div>
     <ul
       v-if="features !== ''"
       class="features"
@@ -38,6 +44,7 @@ export default class PricingBlockItem extends Vue {
   @Prop() price!: number
   @Prop({ default: '' }) features!: string
   @Prop({ default: false }) button!: boolean
+  @Prop() monthly!: boolean
 }
 </script>
 
@@ -83,11 +90,16 @@ $pricing-block-item-padding: 33px;
 
     > .feature {
       list-style-image: url('../../assets/img/check.svg');
+      line-height: 1.63;
 
       + .feature {
         margin-top: 20px;
       }
     }
+  }
+
+  > .button {
+    margin-bottom: 10px;
   }
 }
 </style>

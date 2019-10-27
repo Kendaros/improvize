@@ -1,20 +1,28 @@
 <template>
   <section class="pricing">
     <h2 class="title">
-      Pricing
+      {{ title === '' ? $t('general.pricing') : title }}
     </h2>
+    <p
+      v-if="text !== ''"
+      class="text"
+    >
+      {{ text }}
+    </p>
     <div class="pricings-and-link">
       <div class="pricings">
         <pricing-block-item
           v-for="(item, i) in pricing"
           :key="`pricing-block-${i}`"
-          :title="$t(`products.${productName}.pricing.${item.title}.title`)"
+          :title="$t(`${category}.${productName}.pricing.${pricingSubKey ? `${pricingSubKey}.` : ''}${item.title}.title`)"
           :price="item.price"
-          :features="$t(`products.${productName}.pricing.${item.title}.features`)"
+          :features="$t(`${category}.${productName}.pricing.${pricingSubKey ? `${pricingSubKey}.` : ''}${item.title}.features`)"
           :button="item.button"
+          :monthly="item.monthly"
         />
       </div>
       <n-link
+        v-if="assistance"
         :to="{ name: `services-support___${$route.name.slice(-2)}` }"
         class="technical-assistance"
       >
@@ -34,7 +42,13 @@ import { Pricing } from '~/utils/interfaces'
 })
 export default class PricingBlock extends Vue {
   @Prop() pricing!: Array<Pricing>
+  @Prop() category!: string
   @Prop() productName!: string
+  @Prop() pricingSubKey!: string
+  @Prop({ default: '' }) title!: string
+  @Prop({ default: '' }) text!: string
+  @Prop({ default: true }) assistance!: boolean
+  @Prop({ default: false }) monthly!: boolean
 }
 </script>
 
@@ -48,6 +62,11 @@ export default class PricingBlock extends Vue {
 
   > .title {
     text-align: center;
+  }
+
+  > .text {
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 
   > .pricings-and-link {

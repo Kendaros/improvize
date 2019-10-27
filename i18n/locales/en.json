@@ -4,7 +4,9 @@
     "they-trust-us": "They trust us",
     "softwares": "Softwares",
     "learn-more": "Learn more",
-    "technical-assistance": "Technical assistance"
+    "technical-assistance": "Technical assistance",
+    "pricing": "Pricing",
+    "monthly": "/month"
   },
   "warning": {
     "not-ready": "That page isn’t quite ready yet, but stay tuned or contact us to have more informations."
@@ -83,6 +85,36 @@
         "title": "Types of servers",
         "text": "Mutualised\nIt is one server shared amongst other users. Cheaper, but its capacity is divided according to others’ use.\n\nDedicated\nThe server (memory, machine time, discs) is completely dedicated to your use. You can have as many databases as you need.",
         "list": ""
+      },
+      "shared": "Shared server",
+      "shared-text": "If you need more, see dedicated server",
+      "dedicated": "Dedicated server",
+      "dedicated-text": "All datahosting fees are paid annually",
+      "pricing": {
+        "shared": {
+          "one": {
+            "title": "One database",
+            "features": ""
+          },
+          "two": {
+            "title": "2 to 3 databases",
+            "features": ""
+          }
+        },
+        "dedicated": {
+          "standard": {
+            "title": "Standard",
+            "features": "64Go RAM / 1 To disc or 32Go RAM / 4 To disc"
+          },
+          "premium": {
+            "title": "Premium",
+            "features": "96Go RAM / 1 To SSD"
+          },
+          "deluxe": {
+            "title": "Deluxe",
+            "features": "128Go RAM / 6 To or 128Go RAM / 1,5 To SSD (Commissioning: 120€)"
+          }
+        }
       }
     }
   },
