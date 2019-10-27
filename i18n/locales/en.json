@@ -131,7 +131,7 @@
       },
       "block-2": {
         "title": "Annual workshop",
-        "text": "This workshop lasts all day (10: 00-17: 30) and is held in Paris, usually at the FGO Barbara Center. This is a re-training day where we meet, users and designer and during which:",
+        "text": "This workshop lasts all day (10: 00-17: 30) and is held in Paris, usually at the FGO Barbara Center.\n\n This is a re-training day where we meet, users and designer and during which:",
         "list": "Are presented additions and improvements that have emerged during the year\nAll questions can be asked"
       },
       "not-included": "Travel expenses are not included",
@@ -220,12 +220,12 @@
       "right-text": "Our software solutions are not designed like sheet music that have to be followed note by note. On the contrary, we think of them as instruments you can use in ways adapted to any situation. Anyone familiar with music knows how important improvisation is, as the Holy Grail of the musician. It demands a simultaneous knowledge of theory, a command of an instrument and a capacity to create something new with others.",
       "team": {
         "title": "Our team",
-        "boggio": {
+        "jcboggio": {
           "fullname": "Jean-Christophe Boggio",
           "occupation": "CEO & DEVELOPER",
           "bio": "Jean-Christophe has been writing custom made software since 1987 and specifically for the music industry since 1992. He is the main developer of Le Sage and Inpro."
         },
-        "louyot": {
+        "elouyot": {
           "fullname": "Emily Louyot",
           "occupation": "BUSINESS DEVELOPER",
           "bio": "Emily has joined the team in 2018. Law graduate, she is in charge of customer relationship and business development. She speaks French, English, Spanish and German."

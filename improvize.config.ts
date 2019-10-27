@@ -6,6 +6,7 @@ interface CloudHostingPricing {
 }
 
 interface ImprovizeConfig {
+  members: Array<string>,
   menu: Array<Category>,
   pricings: {
     lesage: Array<Pricing>,
@@ -17,6 +18,7 @@ interface ImprovizeConfig {
 }
 
 const config: ImprovizeConfig = {
+  members: ['jcboggio', 'elouyot'],
   menu: [
     {
       title: 'products',

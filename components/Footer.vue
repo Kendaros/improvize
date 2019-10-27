@@ -31,6 +31,7 @@ export default class Footer extends Vue {}
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 
     & > .logo {
       width: 78px;
