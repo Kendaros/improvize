@@ -95,6 +95,7 @@ export default class WhoWeAre extends Vue {
 
     > .text {
       display: flex;
+      line-height: 1.63;
 
       > .left, > .right {
         flex: 1;

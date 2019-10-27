@@ -27,6 +27,11 @@
         class="technical-assistance"
       >
         {{ $t('general.technical-assistance') }}
+        <img
+          src="../../assets/img/arrow.svg"
+          alt="arrow"
+          class="image"
+        >
       </n-link>
     </div>
   </section>
@@ -93,6 +98,14 @@ export default class PricingBlock extends Vue {
       align-self: flex-end;
       color: $contrast_color;
       font-weight: bold;
+      text-decoration: none;
+
+      > .image {
+        width: 10px;
+        position: relative;
+        top: 3px;
+        margin-left: 10px;
+      }
 
       &:hover {
         cursor: pointer;

@@ -57,6 +57,11 @@
           class="link"
         >
           {{ $t('versioning.history') }}
+          <img
+            src="../../../assets/img/arrow.svg"
+            alt="arrow"
+            class="image"
+          >
         </a>
       </div>
     </div>
@@ -199,6 +204,14 @@ main.versioning {
         margin-top: 40px;
         color: $contrast_color;
         font-weight: bold;
+        text-decoration: none;
+
+        > .image {
+          width: 10px;
+          position: relative;
+          top: 3px;
+          margin-left: 10px;
+        }
 
         &:hover {
           cursor: pointer;
