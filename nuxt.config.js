@@ -1,4 +1,5 @@
 import messages from './i18n/messages'
+import numberFormats from './i18n/numberFormats'
 
 export default {
   mode: 'universal',
@@ -49,7 +50,8 @@ export default {
         defaultLocale: 'en',
         vueI18n: {
           fallbackLocale: 'en',
-          messages
+          messages,
+          numberFormats
         }
       }
     ]
