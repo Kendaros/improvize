@@ -83,6 +83,10 @@ $pricing-block-item-padding: 33px;
 
     > .feature {
       list-style-image: url('../../assets/img/check.svg');
+
+      + .feature {
+        margin-top: 20px;
+      }
     }
   }
 }
