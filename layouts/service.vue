@@ -53,6 +53,16 @@ main.service {
         text-align: left;
       }
     }
+
+    @media screen and (max-width: $break-md) {
+      > .left {
+        order: 2
+      }
+
+      > .right {
+        order: 1
+      }
+    }
   }
 }
 </style>

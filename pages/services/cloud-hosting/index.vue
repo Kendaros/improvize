@@ -80,17 +80,6 @@ export default class CloudHosting extends Vue {
     margin-top: 100px;
   }
 
-  > .list-image:nth-child(even) {
-    > .left {
-      order: 2;
-    }
-
-    > .right {
-      order: 1;
-      text-align: left;
-    }
-  }
-
   > .pricing-wrapper {
     background-image: linear-gradient(to bottom, rgba(248, 246, 255, 0), rgba(75, 121, 234, 0.06));
     padding: 100px 0;

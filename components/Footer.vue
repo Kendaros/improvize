@@ -23,7 +23,7 @@ export default class Footer extends Vue {}
 @import "~@/assets/styles/variables";
 
 .main-footer {
-  height: 350px;
+  min-height: 350px;
   background-image: linear-gradient(to bottom, rgba(248, 246, 255, 0), rgba(75, 121, 234, 0.06));
 
   & > .footer-wrapper {

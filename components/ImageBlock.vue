@@ -38,7 +38,8 @@ export default class ImageBlock extends Vue {
 <style lang="scss">
 @import "~@/assets/styles/variables";
 .image-block {
-  width: 341px;
+  max-width: 341px;
+  flex: 0 1 341px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   padding: 48px;
 

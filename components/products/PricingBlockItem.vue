@@ -56,7 +56,8 @@ export default class PricingBlockItem extends Vue {
 $pricing-block-item-padding: 33px;
 
 .pricing-block-item {
-  width: 343px;
+  max-width: 343px;
+  flex: 0 1 343px;
   border-radius: 4px;
   border: solid 1px #e0dfdf;
   background-color: #ffffff;

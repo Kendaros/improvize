@@ -65,6 +65,7 @@ export default class ProductPresentation extends Vue {
 .list-image {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
 
   > .left {
     flex: 1;

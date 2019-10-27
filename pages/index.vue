@@ -197,11 +197,11 @@ export default class LandingPage extends Vue {
 
     > .softwares-blocks {
       display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
 
       .image-block {
-        + .image-block {
-          margin-left: 29px;
-        }
+        margin: 14px;
       }
     }
   }
@@ -210,7 +210,6 @@ export default class LandingPage extends Vue {
     min-height: 552px;
     background-image: linear-gradient(to bottom, rgba(248, 246, 255, 0), rgba(75, 121, 234, 0.06));
 
-    padding: 78px;
     text-align: center;
 
     > .title {
@@ -221,6 +220,7 @@ export default class LandingPage extends Vue {
       display: flex;
       justify-content: center;
       align-items: stretch;
+      flex-wrap: wrap;
     }
   }
 }

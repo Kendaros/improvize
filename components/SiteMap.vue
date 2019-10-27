@@ -41,11 +41,18 @@ export default class SiteMap extends Vue {
 @import "~@/assets/styles/variables";
 .sitemap {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: cener;
 
   .group {
     list-style-type: none;
     padding: 0;
-    margin: 0 50px;
+    width: 200px;
+
+    @media screen and (max-width: $break-md) {
+      width: 150px;
+    }
 
     .group-title {
       color: $font_dark_color;
