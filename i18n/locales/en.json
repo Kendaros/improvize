@@ -6,7 +6,10 @@
     "learn-more": "Learn more",
     "technical-assistance": "Technical assistance",
     "pricing": "Pricing",
-    "monthly": "/month"
+    "onetime": "",
+    "daily": "/day",
+    "monthly": "/month",
+    "yearly": "/year"
   },
   "warning": {
     "not-ready": "That page isn’t quite ready yet, but stay tuned or contact us to have more informations."
@@ -114,6 +117,30 @@
             "title": "Deluxe",
             "features": "128Go RAM / 6 To or 128Go RAM / 1,5 To SSD (Commissioning: 120€)"
           }
+        }
+      }
+    },
+    "training": {
+      "presentation": "To ensure the best use of our software by your teams, we offer training days in your premises or in Tours. After exchanging on your needs, we elaborate a training program specific to your activity. We evaluate learners' understanding through different exercices. At the end of the session, we ensure a continuous improvement of our teaching via a satisfaction questionnaire.",
+      "block-1": {
+        "title": "Training days",
+        "text": "To ensure the best use of our software by your teams, we offer training days in your premises or in Tours. \nAfter exchanging on your needs, we elaborate a training program specific to your activity. We evaluate learners' understanding through different exercices. At the end of the session, we ensure a continuous improvement of our teaching via a satisfaction questionnaire.\n\nWe are certified by DATA DOCK meaning that AFDAS can finance partially or entirely the training.",
+        "list": ""
+      },
+      "block-2": {
+        "title": "Annual workshop",
+        "text": "This workshop lasts all day (10: 00-17: 30) and is held in Paris, usually at the FGO Barbara Center. This is a re-training day where we meet, users and designer and during which:",
+        "list": "Are presented additions and improvements that have emerged during the year\nAll questions can be asked"
+      },
+      "not-included": "Travel expenses are not included",
+      "pricing": {
+        "days": {
+          "title": "Training days",
+          "features": "Certified by DATA DOCK (AFDAS can finance partially or entirely the training)"
+        },
+        "workshop": {
+          "title": "Annual workshop",
+          "features": ""
         }
       }
     }

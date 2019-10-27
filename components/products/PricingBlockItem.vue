@@ -8,10 +8,10 @@
       <span class="ht">H.T</span>
     </div>
     <div
-      v-if="monthly"
+      v-if="frequency !== ''"
       class="monhtly"
     >
-      {{ $t('general.monthly') }}
+      {{ $t(`general.${frequency}`) }}
     </div>
     <ul
       v-if="features !== ''"
@@ -42,9 +42,9 @@ import RectButton from '~/components/RectButton.vue'
 export default class PricingBlockItem extends Vue {
   @Prop() title!: string
   @Prop() price!: number
+  @Prop({ default: '' }) frequency!: string
   @Prop({ default: '' }) features!: string
   @Prop({ default: false }) button!: boolean
-  @Prop() monthly!: boolean
 }
 </script>
 

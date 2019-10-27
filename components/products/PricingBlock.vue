@@ -18,7 +18,7 @@
           :price="item.price"
           :features="$t(`${category}.${productName}.pricing.${pricingSubKey ? `${pricingSubKey}.` : ''}${item.title}.features`)"
           :button="item.button"
-          :monthly="item.monthly"
+          :frequency="item.frequency"
         />
       </div>
       <n-link
@@ -48,7 +48,6 @@ export default class PricingBlock extends Vue {
   @Prop({ default: '' }) title!: string
   @Prop({ default: '' }) text!: string
   @Prop({ default: true }) assistance!: boolean
-  @Prop({ default: false }) monthly!: boolean
 }
 </script>
 
@@ -65,8 +64,7 @@ export default class PricingBlock extends Vue {
   }
 
   > .text {
-    margin-top: 20px;
-    margin-bottom: 50px;
+    margin: 10px 0 20px;
   }
 
   > .pricings-and-link {

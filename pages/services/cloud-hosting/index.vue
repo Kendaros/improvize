@@ -1,6 +1,6 @@
 <template>
   <main
-    class="cloud-hosting"
+    class="cloud-hosting service"
   >
     <div class="presentation padded inside-the-grid">
       <img
@@ -68,6 +68,10 @@ import { Pricing } from '~/utils/interfaces'
   components: { ListImage, PricingBlock }
 })
 export default class CloudHosting extends Vue {
+  layout (): string {
+    return 'service'
+  }
+
   get sharedPricing (): Array<Pricing> {
     return config.pricings['cloud-hosting'].shared
   }
@@ -81,22 +85,6 @@ export default class CloudHosting extends Vue {
 
 <style lang="scss">
 .cloud-hosting {
-  > .presentation {
-    margin-top: 87px;
-    text-align: center;
-
-    > .title {
-      margin-top: 2px;
-    }
-
-    > .description {
-      margin: 38px auto 0 auto;
-      max-width: 712px;
-      text-align: left;
-      line-height: 1.63;
-    }
-  }
-
   > .list-image {
     margin-top: 100px;
   }

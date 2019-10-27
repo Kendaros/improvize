@@ -28,22 +28,23 @@
   </main>
 </template>
 
-<script>
+<script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
 import ProductPresentation from '~/components/products/ProductPresentation.vue'
 import ListImage from '~/components/products/ListImage.vue'
 import PricingBlock from '~/components/products/PricingBlock.vue'
 import config from '~/improvize.config'
+import { Pricing } from '~/utils/interfaces'
 
 @Component({
   components: { PricingBlock, ProductPresentation, ListImage }
 })
 export default class LeSage extends Vue {
-  layout () {
+  layout (): string {
     return 'product'
   }
 
-  get pricing () {
+  get pricing (): Array<Pricing> {
     return config.pricings.lesage
   }
 }

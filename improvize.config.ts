@@ -10,7 +10,8 @@ interface ImprovizeConfig {
   pricings: {
     lesage: Array<Pricing>,
     inpro: Array<Pricing>,
-    'cloud-hosting': CloudHostingPricing
+    'cloud-hosting': CloudHostingPricing,
+    training: Array<Pricing>
   }
 }
 
@@ -38,40 +39,40 @@ const config: ImprovizeConfig = {
       {
         title: 'license',
         price: 5000,
-        button: true,
-        monthly: false
+        frequency: 'onetime',
+        button: true
       },
       {
         title: 'registration',
         price: 900,
-        button: false,
-        monthly: false
+        frequency: 'onetime',
+        button: false
       },
       {
         title: 'updates',
         price: 560,
-        button: false,
-        monthly: false
+        frequency: 'onetime',
+        button: false
       }
     ],
     inpro: [
       {
         title: 'license',
         price: 5000,
-        button: true,
-        monthly: false
+        frequency: 'onetime',
+        button: true
       },
       {
         title: 'young',
         price: 3500,
-        button: true,
-        monthly: false
+        frequency: 'onetime',
+        button: true
       },
       {
         title: 'updates',
         price: 560,
-        button: false,
-        monthly: false
+        frequency: 'onetime',
+        button: false
       }
     ],
     'cloud-hosting': {
@@ -79,37 +80,51 @@ const config: ImprovizeConfig = {
         {
           title: 'one',
           price: 30,
-          button: false,
-          monthly: true
+          frequency: 'monthly',
+          button: false
         },
         {
           title: 'two',
           price: 50,
-          button: false,
-          monthly: true
+          frequency: 'monthly',
+          button: false
         }
       ],
       dedicated: [
         {
           title: 'standard',
           price: 120,
-          button: false,
-          monthly: true
+          frequency: 'monthly',
+          button: false
         },
         {
           title: 'premium',
           price: 200,
-          button: false,
-          monthly: true
+          frequency: 'monthly',
+          button: false
         },
         {
           title: 'deluxe',
           price: 300,
-          button: false,
-          monthly: true
+          frequency: 'monthly',
+          button: false
         }
       ]
-    }
+    },
+    training: [
+      {
+        title: 'days',
+        price: 600,
+        frequency: 'daily',
+        button: false
+      },
+      {
+        title: 'workshop',
+        price: 150,
+        frequency: 'daily',
+        button: false
+      }
+    ]
   }
 }
 

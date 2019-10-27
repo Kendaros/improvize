@@ -10,7 +10,7 @@
         v-html="text.replace(/\n/g, '<br>')"
       />
       <ul
-        v-if="list !== ''"
+        v-if="list !== '' && list"
         class="list"
       >
         <li
