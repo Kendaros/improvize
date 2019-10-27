@@ -2,19 +2,9 @@
   <main
     class="cloud-hosting service"
   >
-    <div class="presentation padded inside-the-grid">
-      <img
-        src="../../../assets/img/services/cloud-hosting.svg"
-        alt="Cloud Hosting"
-      >
-      <h1 class="title">
-        {{ $t('menu.cloud-hosting') }}
-      </h1>
-      <p
-        class="description"
-        v-html="$t('services.cloud-hosting.presentation').replace(/\n/g, '<br>')"
-      />
-    </div>
+    <service-presentation-block
+      name="cloud-hosting"
+    />
 
     <img
       class="bg-gradient"
@@ -24,7 +14,7 @@
 
     <list-image
       v-for="n in 4"
-      :key="`services-lesage-block-${n}`"
+      :key="`services-cloud-hosting-block-${n}`"
       :title="$t(`services.cloud-hosting.block-${n}.title`)"
       :text="$t(`services.cloud-hosting.block-${n}.text`)"
       :list="$t(`services.cloud-hosting.block-${n}.list`)"
@@ -61,11 +51,12 @@
 import { Vue, Component } from 'nuxt-property-decorator'
 import ListImage from '~/components/products/ListImage.vue'
 import PricingBlock from '~/components/products/PricingBlock.vue'
+import ServicePresentationBlock from '~/components/services/ServicePresentationBlock.vue'
 import config from '~/improvize.config'
 import { Pricing } from '~/utils/interfaces'
 
 @Component({
-  components: { ListImage, PricingBlock }
+  components: { ListImage, PricingBlock, ServicePresentationBlock }
 })
 export default class CloudHosting extends Vue {
   layout (): string {

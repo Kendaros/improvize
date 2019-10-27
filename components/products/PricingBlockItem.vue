@@ -4,7 +4,9 @@
       {{ title }}
     </h3>
     <div class="price">
-      <span class="figure">{{ price }}€</span>
+      <span class="figure">
+        {{ $n(price, `${price % 1 === 0 ? 'currency' : 'currencyDecimals'}`) }}
+      </span>
       <span class="ht">H.T</span>
     </div>
     <div

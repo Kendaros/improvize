@@ -1,18 +1,8 @@
 <template>
   <main class="training service">
-    <div class="presentation padded inside-the-grid">
-      <img
-        src="../../../assets/img/services/training.svg"
-        alt="Training"
-      >
-      <h1 class="title">
-        {{ $t('menu.training') }}
-      </h1>
-      <p
-        class="description"
-        v-html="$t('services.training.presentation').replace(/\n/g, '<br>')"
-      />
-    </div>
+    <service-presentation-block
+      name="training"
+    />
 
     <img
       class="bg-gradient"
@@ -22,7 +12,7 @@
 
     <list-image
       v-for="n in 2"
-      :key="`services-lesage-block-${n}`"
+      :key="`services-training-block-${n}`"
       :title="$t(`services.training.block-${n}.title`)"
       :text="$t(`services.training.block-${n}.text`)"
       :list="$t(`services.training.block-${n}.list`)"
@@ -44,11 +34,12 @@
 import { Vue, Component } from 'nuxt-property-decorator'
 import PricingBlock from '~/components/products/PricingBlock.vue'
 import ListImage from '~/components/products/ListImage.vue'
+import ServicePresentationBlock from '~/components/services/ServicePresentationBlock.vue'
 import { Pricing } from '~/utils/interfaces'
 import config from '~/improvize.config'
 
 @Component({
-  components: { PricingBlock, ListImage }
+  components: { PricingBlock, ListImage, ServicePresentationBlock }
 })
 export default class Training extends Vue {
   layout (): string {

@@ -9,3 +9,8 @@ export interface Pricing {
   frequency: string,
   button: boolean
 }
+
+export interface HourlyPricing {
+  hours: number,
+  price: number
+}

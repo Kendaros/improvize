@@ -1,4 +1,4 @@
-import { Category, Pricing } from '~/utils/interfaces'
+import { Category, Pricing, HourlyPricing } from '~/utils/interfaces'
 
 interface CloudHostingPricing {
   shared: Array<Pricing>,
@@ -11,7 +11,8 @@ interface ImprovizeConfig {
     lesage: Array<Pricing>,
     inpro: Array<Pricing>,
     'cloud-hosting': CloudHostingPricing,
-    training: Array<Pricing>
+    training: Array<Pricing>,
+    support: Array<HourlyPricing>
   }
 }
 
@@ -123,6 +124,40 @@ const config: ImprovizeConfig = {
         price: 150,
         frequency: 'daily',
         button: false
+      }
+    ],
+    support: [
+      {
+        hours: 2,
+        price: 150
+      },
+      {
+        hours: 12,
+        price: 810
+      },
+      {
+        hours: 18,
+        price: 1215
+      },
+      {
+        hours: 30,
+        price: 1912.50
+      },
+      {
+        hours: 36,
+        price: 2160
+      },
+      {
+        hours: 48,
+        price: 2700
+      },
+      {
+        hours: 72,
+        price: 3780
+      },
+      {
+        hours: -1,
+        price: 4500
       }
     ]
   }

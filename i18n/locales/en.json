@@ -9,7 +9,9 @@
     "onetime": "",
     "daily": "/day",
     "monthly": "/month",
-    "yearly": "/year"
+    "yearly": "/year",
+    "hours": "Hours",
+    "price": "Price"
   },
   "warning": {
     "not-ready": "That page isn’t quite ready yet, but stay tuned or contact us to have more informations."
@@ -143,6 +145,15 @@
           "features": ""
         }
       }
+    },
+    "support": {
+      "presentation": "We are ready to assist you every time you need us.  We own a pro licence of Teamviewer to make the process comfortable. This support can be as much about technical questions as being a complement of training in the handling of the tool.",
+      "block-1": {
+        "title": "As a reminder",
+        "text": "When acquiring one of our licenses, we assist you during the installation of the software and you have a credit of 4 hours of telephone training.\n\nDuring the annual subscription renewal, you have a credit of 1/2 hour, useful to ask us about new features, corrections or solicit us on special cases.\nWe do not bill the time spent to see and fix software bugs or to create / modify import filters. The other requests are counted.\n\nYou can pay at once or by monthly transfer. Rates are decreasing according to the table. This degressivity is also taken into account in case of extension of package (we will send you a quote on request).",
+        "list": ""
+      },
+      "pricing-description": "To meet the demand, we have set up more specialized accompaniments"
     }
   },
   "products": {

@@ -1,9 +1,9 @@
 <template>
   <main class="who-we-are">
     <div class="presentation">
-      <div class="title"></div>
-      <div class="description"></div>
-      <div class="text"></div>
+      <div class="title" />
+      <div class="description" />
+      <div class="text" />
     </div>
   </main>
 </template>
