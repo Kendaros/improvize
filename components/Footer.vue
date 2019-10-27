@@ -1,6 +1,6 @@
 <template>
   <footer class="main-footer padded">
-    <div class="footer-wrapper inside-the-grid padded">
+    <div class="footer-wrapper inside-the-grid">
       <div class="logo">
         <img src="../assets/img/logo-simple.svg" alt="Improvize logo">
       </div>
