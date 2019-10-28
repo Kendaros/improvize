@@ -42,6 +42,7 @@ export default class ContactUs extends Vue {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 
   > .title {
     font-family: $miso;
