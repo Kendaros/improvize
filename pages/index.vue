@@ -138,6 +138,8 @@ export default class LandingPage extends Vue {
   > .software-solutions {
     margin-top: 80px;
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
 
     .left {
       flex: 1;
@@ -164,13 +166,13 @@ export default class LandingPage extends Vue {
     }
 
     .right {
-      flex: 1;
       display: flex;
       justify-content: center;
       align-items: center;
+      flex: 0 1 405px;
 
       .image {
-        width: 405px;
+        width: 100%;
       }
     }
   }
