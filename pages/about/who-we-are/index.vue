@@ -1,6 +1,6 @@
 <template>
   <main class="who-we-are">
-    <div class="presentation padded">
+    <div class="presentation padded inside-the-grid">
       <h1 class="title">
         {{ $t('about.who-we-are.title') }}
       </h1>
@@ -120,7 +120,7 @@ export default class WhoWeAre extends Vue {
 
     > .team {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-evenly;
       flex-wrap: wrap;
     }
   }
