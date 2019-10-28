@@ -74,13 +74,14 @@ export default class PricingBlock extends Vue {
 
   > .pricings-and-link {
     margin-top: 38px;
-    display: inline-flex;
+    display: flex;
+    justify-content: center;
     flex-direction: column;
 
     > .pricings {
       display: flex;
       justify-content: center;
-      /*flex-wrap: wrap;*/
+      flex-wrap: wrap;
 
       .pricing-block-item {
         margin: 14px;
@@ -93,8 +94,8 @@ export default class PricingBlock extends Vue {
 
     > .technical-assistance {
       margin-top: 20px;
-      margin-left: auto;
-      align-self: flex-end;
+      /*margin-left: auto;*/
+      /*align-self: flex-end;*/
       color: $contrast_color;
       font-weight: bold;
       text-decoration: none;
