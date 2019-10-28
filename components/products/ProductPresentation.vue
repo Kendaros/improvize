@@ -52,7 +52,7 @@ export default class ProductPresentation extends Vue {
     justify-content: flex-start;
     align-items: center;
 
-    @media screen and (max-width: $break-sm) {
+    @media screen and (max-width: $break-xs) {
       flex-basis: 100%;
     }
 
@@ -80,7 +80,7 @@ export default class ProductPresentation extends Vue {
     display: flex;
     justify-content: center;
     align-items: center;
-    @media screen and (max-width: $break-sm) {
+    @media screen and (max-width: $break-xs) {
       flex-basis: 100%;
       margin-bottom: 40px;
     }

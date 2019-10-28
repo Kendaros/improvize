@@ -28,6 +28,51 @@
         </div>
       </li>
     </ul>
+    <div
+      class="button-burger"
+      @click="toggleMenu"
+    >
+      <img src="../assets/img/burger.svg" alt="Menu icon">
+    </div>
+    <div
+      v-if="menu"
+      class="mobile-menu"
+    >
+      <div
+        class="close"
+        @click="toggleMenu"
+      >
+        <img src="../assets/img/close.svg" alt="Close menu">
+      </div>
+      <ul
+        v-for="group in groups"
+        :key="group.title"
+        class="group"
+      >
+        <li class="group-title group-item">
+          {{ $t(`menu.${group.title}`) }}
+        </li>
+        <li
+          v-for="link in group.links"
+          :key="link"
+          class="group-item"
+        >
+          <n-link
+            class="link"
+            :to="{ name: `${group.title}-${link}___${$route.name.slice(-2)}` }"
+          >
+            <div>
+              <div class="title">
+                {{ $t(`menu.${link}`) }}
+              </div>
+              <div class="description">
+                {{ $t(`menu.descriptions.${link}`) }}
+              </div>
+            </div>
+          </n-link>
+        </li>
+      </ul>
+    </div>
   </nav>
 </template>
 
@@ -42,6 +87,7 @@ import { Category } from '~/utils/interfaces'
 })
 export default class NavBar extends Vue {
   activeCategory: string = ''
+  menu: boolean = false
 
   @Watch('$route')
   onRouteChanged () {
@@ -55,6 +101,11 @@ export default class NavBar extends Vue {
   toggleSubmenu (category: string) {
     this.activeCategory = category || ''
   }
+
+  toggleMenu () {
+    this.menu = !this.menu
+    window.document.body.style.overflow = this.menu ? 'hidden' : 'scroll'
+  }
 }
 </script>
 
@@ -62,9 +113,20 @@ export default class NavBar extends Vue {
 @import '~/assets/styles/variables';
 
 .main-nav {
-  .menu {
+  display: flex;
+  width: 100%;
+
+  @media screen and (max-width: $break-sm) {
+    justify-content: flex-end;
+  }
+
+  > .menu {
     list-style-type: none;
     padding: 0;
+
+    @media screen and (max-width: $break-sm) {
+      display: none;
+    }
 
     .menu-item {
       display: inline-block;
@@ -84,6 +146,10 @@ export default class NavBar extends Vue {
     padding: 0 22px;
     background: #FFFFFF;
 
+    @media screen and (max-width: $break-sm) {
+      display: none;
+    }
+
     .link {
       display: block;
       color: $font_dark_color;
@@ -91,6 +157,69 @@ export default class NavBar extends Vue {
 
       & + .link {
         border-top: 1px solid #ebebeb;
+      }
+    }
+  }
+
+  > .button-burger {
+    width: 20px;
+    display: none;
+
+    @media screen and (max-width: $break-sm) {
+      display: inline-block;
+    }
+  }
+
+  > .mobile-menu {
+    width: 100vw;
+    min-height: 100vh;
+    background: $contrast_color;
+    color: #FFFFFF;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 25px;
+    height: 0;
+    overflow-y: scroll;
+
+    > .close {
+      width: 30px;
+      position: fixed;
+      top: 25px;
+      right: 25px;
+    }
+
+    > .group {
+      list-style-type: none;
+      padding: 0;
+      margin-bottom: 25px;
+
+      > .group-title {
+        font-family: $miso;
+        font-size: $f30;
+      }
+
+      > .group-item {
+        display: block;
+
+        & + .group-item {
+          margin-top: 20px;
+        }
+      }
+
+      .link {
+        display: block;
+        text-decoration: none;
+        color: white;
+        margin-left: 25px;
+
+        .title {
+          font-weight: bold;
+        }
+
+        .description {
+          line-height: 1.5;
+        }
       }
     }
   }
