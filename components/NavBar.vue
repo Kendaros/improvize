@@ -56,6 +56,7 @@
           v-for="link in group.links"
           :key="link"
           class="group-item"
+          @click="toggleMenu"
         >
           <n-link
             class="link"

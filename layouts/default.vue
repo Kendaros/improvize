@@ -65,7 +65,7 @@ h3 {
   }
 
   @media screen and (max-width: $break-xs) {
-    padding: 0 $padding-sm
+    padding: 0 $padding-xs
   }
 }
 
