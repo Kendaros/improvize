@@ -219,6 +219,10 @@ export default class LandingPage extends Vue {
 
       .image-block {
         margin: 14px;
+
+        @media screen and (max-width: $break-xs) {
+          margin: 14px 0;
+        }
       }
     }
   }

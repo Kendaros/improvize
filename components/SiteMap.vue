@@ -52,6 +52,7 @@ export default class SiteMap extends Vue {
 
     @media screen and (max-width: $break-md) {
       width: 150px;
+      margin: 10px;
     }
 
     .group-title {
