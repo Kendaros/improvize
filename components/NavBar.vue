@@ -169,6 +169,10 @@ export default class NavBar extends Vue {
     @media screen and (max-width: $break-sm) {
       display: inline-block;
     }
+
+    @media screen and (max-width: $break-xs) {
+      margin-right: 10px;
+    }
   }
 
   > .mobile-menu {
@@ -187,7 +191,11 @@ export default class NavBar extends Vue {
       width: 30px;
       position: fixed;
       top: 25px;
-      right: 25px;
+      right: $padding-md;
+
+      @media screen and (max-width: $break-xs) {
+        right: $padding-xs
+      }
     }
 
     > .group {

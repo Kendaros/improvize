@@ -27,8 +27,12 @@ main.product {
   > .product-presentation {
     margin: 115px auto;
 
-    @media screen and (max-width: $break-xs) {
+    @media screen and (max-width: $break-md) {
       margin: 50px;
+    }
+
+    @media screen and (max-width: $break-xs) {
+      margin: 0;
     }
   }
 

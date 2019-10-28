@@ -43,7 +43,7 @@ export default class SiteMap extends Vue {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: cener;
+  align-items: flex-start;
 
   .group {
     list-style-type: none;
@@ -53,6 +53,11 @@ export default class SiteMap extends Vue {
     @media screen and (max-width: $break-md) {
       width: 150px;
       margin: 10px;
+    }
+
+    @media screen and (max-width: $break-sm) {
+      width: 100px;
+      margin: 20px;
     }
 
     .group-title {
