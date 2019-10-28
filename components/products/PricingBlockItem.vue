@@ -28,7 +28,7 @@
       </li>
     </ul>
     <a
-      href="mailto:info@improvize.eu"
+      :href="`mailto:${email}`"
       class="link"
     >
       <rect-button
@@ -42,6 +42,7 @@
 <script lang="ts">
 import { Vue, Component, Prop } from 'nuxt-property-decorator'
 import RectButton from '~/components/RectButton.vue'
+import config from '~/improvize.config'
 
 @Component({
   components: { RectButton }
@@ -52,6 +53,10 @@ export default class PricingBlockItem extends Vue {
   @Prop({ default: '' }) frequency!: string
   @Prop({ default: '' }) features!: string
   @Prop({ default: false }) button!: boolean
+
+  get email (): string {
+    return config.email
+  }
 }
 </script>
 

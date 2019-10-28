@@ -80,7 +80,7 @@ export default class PricingBlock extends Vue {
     > .pricings {
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
+      /*flex-wrap: wrap;*/
 
       .pricing-block-item {
         margin: 14px;

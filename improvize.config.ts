@@ -2,6 +2,7 @@ import { Category, Pricing, HourlyPricing, CloudHostingPricing, Versions } from 
 
 interface ImprovizeConfig {
   languages: Array<string>,
+  email: string
   members: Array<string>,
   philosophy: Array<string>,
   menu: Array<Category>,
@@ -18,6 +19,7 @@ interface ImprovizeConfig {
 
 const config: ImprovizeConfig = {
   languages: ['en'],
+  email: 'emily@improvize.eu',
   members: ['jcboggio', 'elouyot'],
   philosophy: ['methods', 'cooperation', 'here'],
   menu: [

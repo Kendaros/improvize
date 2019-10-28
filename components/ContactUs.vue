@@ -7,7 +7,7 @@
       {{ $t('contact-us.text') }}
     </div>
     <a
-      href="mailto:info@improvize.eu"
+      :href="`mailto:${email}`"
       class="link"
     >
       <rect-button
@@ -17,15 +17,20 @@
   </section>
 </template>
 
-<script>
+<script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
 import SiteMap from '~/components/SiteMap.vue'
 import RectButton from '~/components/RectButton.vue'
+import config from '~/improvize.config'
 
 @Component({
   components: { SiteMap, RectButton }
 })
-export default class ContactUs extends Vue {}
+export default class ContactUs extends Vue {
+  get email (): string {
+    return config.email
+  }
+}
 </script>
 
 <style lang="scss">

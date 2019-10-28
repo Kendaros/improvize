@@ -10,7 +10,7 @@
             {{ $t('home.description') }}
           </p>
           <a
-            href="mailto:info@improvize.eu"
+            :href="`mailto:${email}`"
             class="link"
           >
             <rect-button
@@ -93,11 +93,16 @@ import { Vue, Component } from 'nuxt-property-decorator'
 import RectButton from '~/components/RectButton.vue'
 import ImageBlock from '~/components/ImageBlock.vue'
 import ServiceBlock from '~/components/ServiceBlock.vue'
+import config from '~/improvize.config'
 
 @Component({
   components: { RectButton, ImageBlock, ServiceBlock }
 })
 export default class LandingPage extends Vue {
+  get email (): string {
+    return config.email
+  }
+
   get frontClients (): Array<string> {
     return [
       'velvetica',
