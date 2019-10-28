@@ -191,7 +191,6 @@ export default class LandingPage extends Vue {
       display: flex;
       justify-content: space-evenly;
       flex-wrap: wrap;
-      margin: 0 -48px;
 
       > .client-image {
         flex: 0 0 114px;

@@ -28,7 +28,7 @@
           />
         </div>
         <div class="right">
-          <div class="hourly-pricing-block-item-header">
+          <div class="hourly-pricing-block-item-header not-mobile">
             <div class="header-hours">
               {{ $t('general.hours') }}
             </div>
@@ -95,10 +95,10 @@ export default class HourlyPricingBlock extends Vue {
       display: flex;
       justify-content: center;
       align-items: flex-start;
+      flex-wrap: wrap;
 
-      > .right {
-        margin-left: 29px;
-        flex: 1;
+      > .right, > .left {
+        margin: 14px;
       }
     }
 
@@ -122,6 +122,12 @@ export default class HourlyPricingBlock extends Vue {
 
       > .header-price {
         flex: 1;
+      }
+
+      &.not-mobile {
+        @media screen and (max-width: $break-xs) {
+          display: none;
+        }
       }
     }
   }

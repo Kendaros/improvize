@@ -26,6 +26,10 @@ export default class ProductLayout extends Vue {}
 main.product {
   > .product-presentation {
     margin: 115px auto;
+
+    @media screen and (max-width: $break-xs) {
+      margin: 50px;
+    }
   }
 
   > .list-image {
