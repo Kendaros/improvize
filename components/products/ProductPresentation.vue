@@ -43,12 +43,18 @@ export default class ProductPresentation extends Vue {
 
 .product-presentation {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
 
   > .left {
     flex: 2;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
+    @media screen and (max-width: $break-sm) {
+      flex-basis: 100%;
+    }
 
     > .wrapper {
       max-width: 524px;
@@ -69,13 +75,18 @@ export default class ProductPresentation extends Vue {
   }
 
   > .right {
+    max-width: 306px;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (max-width: $break-sm) {
+      flex-basis: 100%;
+      margin-bottom: 40px;
+    }
 
     > .image {
-      width: 306px;
+      width: 100%;
     }
   }
 }

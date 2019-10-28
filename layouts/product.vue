@@ -30,8 +30,10 @@ main.product {
 
   > .list-image {
     margin-top: 120px;
+    flex-wrap: wrap-reverse;
 
     &:nth-child(even) {
+      flex-wrap: wrap;
       > .left {
         order: 2;
       }
@@ -40,16 +42,6 @@ main.product {
         order: 1;
         text-align: left;
       }
-    }
-  }
-
-  @media screen and (max-width: $break-md) {
-    > .left {
-      order: 2
-    }
-
-    > .right {
-      order: 1
     }
   }
 }

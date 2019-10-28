@@ -90,6 +90,7 @@ export default class ProductPresentation extends Vue {
     max-width: 432px;
     flex: 0 1 432px;
     text-align: right;
+    width: 100%;
   }
 }
 </style>

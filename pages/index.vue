@@ -170,6 +170,7 @@ export default class LandingPage extends Vue {
       justify-content: center;
       align-items: center;
       flex: 0 1 405px;
+      max-width: 405px;
 
       .image {
         width: 100%;
