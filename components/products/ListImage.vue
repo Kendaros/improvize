@@ -65,6 +65,7 @@ export default class ProductPresentation extends Vue {
 .list-image {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-wrap: wrap;
 
   > .left {
@@ -84,13 +85,22 @@ export default class ProductPresentation extends Vue {
       margin-top: 10px;
       line-height: 1.63;
     }
+
+    @media screen and (max-width: $break-xs) {
+      flex-basis: 100%;
+    }
   }
 
   > .right {
     max-width: 432px;
-    flex: 0 1 432px;
+    flex: 1;
     text-align: right;
     width: 100%;
+    min-width: 120px;
+
+    @media screen and (max-width: $break-xs) {
+      flex-basis: 100%;
+    }
   }
 }
 </style>
