@@ -1,8 +1,9 @@
-import { Category, Pricing, HourlyPricing, CloudHostingPricing, Versions } from '~/utils/interfaces'
+import { Category, Pricing, HourlyPricing, CloudHostingPricing, Versions, DocumentationLink } from '~/utils/interfaces'
 
 interface ImprovizeConfig {
   languages: Array<string>,
   email: string
+  documentation: Array<DocumentationLink>
   members: Array<string>,
   philosophy: Array<string>,
   menu: Array<Category>,
@@ -20,6 +21,16 @@ interface ImprovizeConfig {
 const config: ImprovizeConfig = {
   languages: ['en'],
   email: 'emily@improvize.eu',
+  documentation: [
+    {
+      lang: 'en',
+      url: 'https://endocs.thefreecat.org'
+    },
+    {
+      lang: 'fr',
+      url: 'https://docs.thefreecat.org'
+    }
+  ],
   members: ['jcboggio', 'elouyot'],
   philosophy: ['methods', 'cooperation', 'here'],
   menu: [
@@ -120,7 +131,7 @@ const config: ImprovizeConfig = {
       },
       {
         title: 'registration',
-        price: 900,
+        price: 1000,
         frequency: 'onetime',
         button: false
       },

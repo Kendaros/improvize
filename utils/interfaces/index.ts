@@ -37,3 +37,8 @@ export interface VersionsHistory {
   lesage: string,
   inpro: string
 }
+
+export interface DocumentationLink {
+  lang: string,
+  url: string
+}
