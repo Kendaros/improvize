@@ -88,8 +88,18 @@ export default class WhoWeAre extends Vue {
       margin: 40px 0;
       display: flex;
 
+      @media screen and (max-width: $break-xs) {
+        flex-basis: 100%;
+      }
+
       > .left, > .right {
         flex: 1;
+      }
+
+      > .right {
+        @media screen and (max-width: $break-xs) {
+          display: none;
+        }
       }
     }
 

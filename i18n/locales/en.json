@@ -80,7 +80,7 @@
       "presentation": "We have powerful servers to host and backup your data and let you access them securely.\nThis technology lets you access your databases wherever you are as long as you have internet access (at home, your office, at clients…). It allows your co-workers to work together as if they were in the same room, even if they are hundreds of kilometers away from each others.",
       "block-1": {
         "title": "Security",
-        "text": "Access to your data is secured by a SSL/TLS connection with client and server certificates : each person to which you grant access to your database will have his/her own personal certificate. For each connection :",
+        "text": "Access to your data is secured by a SSL/TLS connection with client and server certificates: each person to which you grant access to your database will have his/her own personal certificate. For each connection:",
         "list": "The program checks the server’s certificate ;\nThe server checks the user’s certificate ; \nThe server checks that the user has rights to access the database."
       },
       "block-2": {
@@ -176,15 +176,15 @@
       },
       "block-3": {
         "title": "Royalty statements",
-        "list": "Payout definition may be done work by work or for a whole group\nFine management of special cases\nAutomatic payout errors detection\nMultilingual statements\nStatement summaries\nStatement exports (PDF, Excel, other software...)\nFinancial control : advances, payments, postponements\nAggregated statements\nHeirdom and sub-accounts"
+        "list": "Payout definition may be done work by work or for a whole group\nFine management of special cases\nAutomatic payout errors detection\nMultilingual statements\nStatement summaries\nStatement exports (PDF, Excel, other software...)\nFinancial control: advances, payments, postponements\nAggregated statements\nHeirdom and sub-accounts"
       },
       "block-4": {
         "title": "Reporting / Audit",
-        "list": "Top earners, works profitability, tailor-made queries, ... \nSegmentation of results by clients, catalogues, groups of works, ...\nPivots : free grouping of data rows and columns\nExport results to Excel"
+        "list": "Top earners, works profitability, tailor-made queries, ... \nSegmentation of results by clients, catalogues, groups of works, ...\nPivots: free grouping of data rows and columns\nExport results to Excel"
       },
       "block-5": {
         "title": "Quality assurance",
-        "list": "Ongoing improvement : about 80 versions per year\nDevelopment ethics : listening, collaborative, intuitivity, flexibility\nCompatibility : import/export data filters\nDedicated technical support / Training\nBug tracking system"
+        "list": "Ongoing improvement: about 80 versions per year\nDevelopment ethics: listening, collaborative, intuitivity, flexibility\nCompatibility: import/export data filters\nDedicated technical support / Training\nBug tracking system"
       },
       "pricing": {
         "license": {
@@ -221,7 +221,7 @@
   },
   "about": {
     "who-we-are": {
-      "title": "Why Improvize ?",
+      "title": "Why Improvize?",
       "description": "In everyday language improvise means “making the best of things with the means you have at your disposal”.",
       "left-text": "The word has a negative connotation as it is often used when work is done hurriedly, in a rush. \nIn a perfect world, receiving a catalogue of works, filing it, collecting royalties from a multitude of sources, analysing and paying them etc... would be a simple task. In real life however, files arrive at the last minute, are not in the correct format and codes are not universal... ",
       "right-text": "Our software solutions are not designed like sheet music that have to be followed note by note. On the contrary, we think of them as instruments you can use in ways adapted to any situation. Anyone familiar with music knows how important improvisation is, as the Holy Grail of the musician. It demands a simultaneous knowledge of theory, a command of an instrument and a capacity to create something new with others.",
@@ -241,16 +241,16 @@
       "philosophy": {
         "title": "Our philosophy",
         "methods": {
-          "title": "Your job : \nyour methods",
+          "title": "Your job: \nyour methods",
           "text": "We don't pretend to know your job better than you do. We are not making software that enslave you by imposing its own way of doing things. \nOn the contrary, we create tools that let you work your way, releasing you from repetitive tasks. You will discover that there are often several ways of doing things. The « right » method is your method."
         },
         "cooperation": {
           "title": "We value\ncooperation",
-          "text": "We believe the world works better when we work together. \n\nThis is why we have opted for a collaborative development model : all enhancements asked by someone benefit to everyone. \nWe also have various solutions to securely let your team have access to your data wherever they are."
+          "text": "We believe the world works better when we work together. \n\nThis is why we have opted for a collaborative development model: all enhancements asked by someone benefit to everyone. \nWe also have various solutions to securely let your team have access to your data wherever they are."
         },
         "here": {
           "title": "We are \nalways here",
-          "text": "Our relationship does not end when you buy one of our licences : \n\nWe assist and support you every time you need us ;\n\t• \tdocumentation is available online ;\n\t• \twe organize, once a year, a one day workshop where we explain thoroughly each new feature."
+          "text": "Our relationship does not end when you buy one of our licences: \n\nWe assist and support you every time you need us ;\n\t• \tdocumentation is available online ;\n\t• \twe organize, once a year, a one day workshop where we explain thoroughly each new feature."
         }
       }
     }
