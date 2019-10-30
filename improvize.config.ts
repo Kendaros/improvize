@@ -19,7 +19,7 @@ interface ImprovizeConfig {
 }
 
 const config: ImprovizeConfig = {
-  languages: ['en'],
+  languages: ['en'], // Possible langs: 'en', 'fr, 'de', 'es'
   email: 'ZW1pbHlAaW1wcm92aXplLmV1',
   documentation: [
     {

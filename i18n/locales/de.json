@@ -1,8 +1,8 @@
 {
-  "title": "Bonjour !",
+  "title": "Hello!",
   "general": {
-    "they-trust-us": "Ils nous font confiance",
-    "softwares": "Logiciels",
+    "they-trust-us": "They trust us",
+    "softwares": "Softwares",
     "learn-more": "Learn more",
     "technical-assistance": "Technical assistance",
     "pricing": "Pricing",
@@ -20,23 +20,23 @@
     "not-ready": "That page isn’t quite ready yet, but stay tuned or contact us to have more informations."
   },
   "menu": {
-    "products": "Produits",
+    "products": "Products",
     "services": "Services",
-    "resources": "Ressources",
-    "about": "À propos de nous",
+    "resources": "Resources",
+    "about": "About us",
     "lesage": "Le Sage",
     "inpro": "Inpro",
     "spain": "Spain",
-    "cloud-hosting": "Hébergement",
+    "cloud-hosting": "Cloud Hosting",
     "support": "Support",
-    "training": "Formation",
+    "training": "Training",
     "documentation": "Documentation",
-    "issue-tracking": "Résolution de problèmes",
-    "versioning": "Versions",
-    "who-we-are": "Qui sommes-nous",
-    "contact-us": "Nous contacter",
-    "careers": "Carrières",
-    "clients": "Nos clients",
+    "issue-tracking": "Issue tracking",
+    "versioning": "Versioning",
+    "who-we-are": "Who we are",
+    "contact-us": "Contact us",
+    "careers": "Careers",
+    "clients": "Our clients",
     "descriptions": {
       "lesage": "Software solution for music publishers",
       "inpro": "Management software designed for labels & producers",
@@ -53,9 +53,9 @@
     }
   },
   "contact-us": {
-    "title": "Voulez-vous en savoir plus ?",
-    "text": "N'hésitez pas à nous contacter. Nous pouvons vous montrer notre système et voir ensemble s'il répond à vos besoins.",
-    "button": "Nous contacter"
+    "title": "Do you want to know more?",
+    "text": "Don’t hesitate to contact us. We can show you how the system works and see if it meets your expectations.",
+    "button": "Contact us"
   },
   "home": {
     "title": "Software solutions for music administration",
