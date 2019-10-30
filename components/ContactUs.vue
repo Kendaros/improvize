@@ -6,31 +6,19 @@
     <div class="text">
       {{ $t('contact-us.text') }}
     </div>
-    <a
-      :href="`mailto:${email}`"
-      class="link"
-    >
-      <rect-button
-        :text="$t('menu.contact-us')"
-      />
-    </a>
+    <email-link />
   </section>
 </template>
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
 import SiteMap from '~/components/SiteMap.vue'
-import RectButton from '~/components/RectButton.vue'
-import config from '~/improvize.config'
+import EmailLink from '~/components/EmailLink.vue'
 
 @Component({
-  components: { SiteMap, RectButton }
+  components: { SiteMap, EmailLink }
 })
-export default class ContactUs extends Vue {
-  get email (): string {
-    return config.email
-  }
-}
+export default class ContactUs extends Vue {}
 </script>
 
 <style lang="scss">

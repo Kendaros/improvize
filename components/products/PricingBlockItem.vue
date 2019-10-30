@@ -27,25 +27,17 @@
         {{ item }}
       </li>
     </ul>
-    <a
-      :href="`mailto:${email}`"
-      class="link"
-    >
-      <rect-button
-        v-if="button"
-        :text="$t('contact-us.button')"
-      />
-    </a>
+    <email-link />
   </div>
 </template>
 
 <script lang="ts">
 import { Vue, Component, Prop } from 'nuxt-property-decorator'
-import RectButton from '~/components/RectButton.vue'
 import config from '~/improvize.config'
+import EmailLink from '~/components/EmailLink.vue'
 
 @Component({
-  components: { RectButton }
+  components: { EmailLink }
 })
 export default class PricingBlockItem extends Vue {
   @Prop() title!: string

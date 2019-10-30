@@ -20,7 +20,7 @@ interface ImprovizeConfig {
 
 const config: ImprovizeConfig = {
   languages: ['en'],
-  email: 'emily@improvize.eu',
+  email: 'ZW1pbHlAaW1wcm92aXplLmV1',
   documentation: [
     {
       lang: 'en',

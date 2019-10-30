@@ -9,14 +9,7 @@
           <p class="text">
             {{ $t('home.description') }}
           </p>
-          <a
-            :href="`mailto:${email}`"
-            class="link"
-          >
-            <rect-button
-              :text="$t('menu.contact-us')"
-            />
-          </a>
+          <email-link />
         </div>
       </div>
       <div class="right">
@@ -90,13 +83,13 @@
 
 <script lang="ts">
 import { Vue, Component } from 'nuxt-property-decorator'
-import RectButton from '~/components/RectButton.vue'
 import ImageBlock from '~/components/ImageBlock.vue'
 import ServiceBlock from '~/components/ServiceBlock.vue'
 import config from '~/improvize.config'
+import EmailLink from '~/components/EmailLink.vue'
 
 @Component({
-  components: { RectButton, ImageBlock, ServiceBlock }
+  components: { EmailLink, ImageBlock, ServiceBlock }
 })
 export default class LandingPage extends Vue {
   get email (): string {
