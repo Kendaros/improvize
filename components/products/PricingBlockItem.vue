@@ -27,7 +27,9 @@
         {{ item }}
       </li>
     </ul>
-    <email-link />
+    <email-link
+      v-if="button"
+    />
   </div>
 </template>
 
