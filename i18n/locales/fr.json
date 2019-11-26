@@ -81,7 +81,7 @@
       "block-1": {
         "title": "Security",
         "text": "Access to your data is secured by a SSL/TLS connection with client and server certificates: each person to which you grant access to your database will have his/her own personal certificate. For each connection:",
-        "list": "The program checks the server’s certificate ;\nThe server checks the user’s certificate ; \nThe server checks that the user has rights to access the database."
+        "list": "The program checks the server’s certificate;\nThe server checks the user’s certificate; \nThe server checks that the user has rights to access the database."
       },
       "block-2": {
         "title": "Speed",
@@ -250,7 +250,7 @@
         },
         "here": {
           "title": "We are \nalways here",
-          "text": "Our relationship does not end when you buy one of our licences: \n\nWe assist and support you every time you need us ;\n\t• \tdocumentation is available online ;\n\t• \twe organize, once a year, a one day workshop where we explain thoroughly each new feature."
+          "text": "Our relationship does not end when you buy one of our licences: \n\nWe assist and support you every time you need us;\n\t• \tdocumentation is available online;\n\t• \twe organize, once a year, a one day workshop where we explain thoroughly each new feature."
         }
       }
     }
