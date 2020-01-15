@@ -191,6 +191,10 @@
           "title": "License",
           "features": "Unlimited users\nUnlimited databases\n4 hours of technical assistance\nLifetime license\nFirst year's updates"
         },
+        "singlelicense": {
+          "title": "Single License",
+          "features": "Limited users\nLimited databases\n4 hours of technical assistance\nLifetime license\nFirst year's updates"
+        },
         "registration": {
           "title": "Registration module",
           "features": "CWR checking and cleaning\nWorldwide registration\nCatalogue export for subpublishers"

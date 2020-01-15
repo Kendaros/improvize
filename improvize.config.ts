@@ -125,6 +125,12 @@ const config: ImprovizeConfig = {
     lesage: [
       {
         title: 'license',
+        price: 8000,
+        frequency: 'onetime',
+        button: true
+      },
+     {
+        title: 'singlelicense',
         price: 5000,
         frequency: 'onetime',
         button: true
@@ -137,7 +143,7 @@ const config: ImprovizeConfig = {
       },
       {
         title: 'updates',
-        price: 560,
+        price: 1800,
         frequency: 'onetime',
         button: false
       }
