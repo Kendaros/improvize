@@ -4,6 +4,10 @@ import config from './improvize.config'
 
 export default {
   mode: 'universal',
+  server: {
+    // Uncomment to host server on local network
+    // host: '0.0.0.0'
+  },
   /*
   ** Headers of the page
   */
