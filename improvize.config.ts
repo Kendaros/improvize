@@ -151,19 +151,19 @@ const config: ImprovizeConfig = {
     inpro: [
       {
         title: 'license',
-        price: 5000,
+        price: 7000,
         frequency: 'onetime',
         button: true
       },
       {
         title: 'young',
-        price: 3500,
+        price: 4500,
         frequency: 'onetime',
         button: true
       },
       {
         title: 'updates',
-        price: 560,
+        price: 1400,
         frequency: 'onetime',
         button: false
       }

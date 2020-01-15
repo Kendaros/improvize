@@ -17,7 +17,7 @@
     "size": "Size"
   },
   "warning": {
-    "not-ready": "That page isn’t quite ready yet, but stay tuned or contact us to have more informations."
+    "not-ready": "That page isn’t quite ready yet, but stay tuned or contact us to have more information."
   },
   "menu": {
     "products": "Products",
@@ -214,7 +214,7 @@
         },
         "young": {
           "title": "Young Producers/labels",
-          "features": "Unlimited users\nUnlimited databases\n4 hours of technical assistance\nLifetime license\nFirst year's updates"
+          "features": "Limited users\nOne database\n4 hours of technical assistance\nLifetime license\nFirst year's updates"
         },
         "updates": {
           "title": "Updates",
