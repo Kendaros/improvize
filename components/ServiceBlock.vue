@@ -13,7 +13,7 @@
       {{ text }}
     </div>
     <n-link
-      :to="{ name: `${moreRoute}___${$route.name.slice(-2)}` }"
+      :to="{ name: `${moreRoute}___${$route.name ? $route.name.slice(-2) : 'en'}` }"
       class="more"
     >
       {{ $t('general.learn-more') }}

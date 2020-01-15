@@ -1,7 +1,7 @@
 <template>
   <header class="main-header padded">
     <div class="logo">
-      <n-link to="/">
+      <n-link :to="`/${$i18n.locale !== 'en' ? $i18n.locale : ''}`">
         <img src="../assets/img/logo.svg" alt="Improvize logo">
       </n-link>
     </div>

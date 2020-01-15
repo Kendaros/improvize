@@ -16,7 +16,7 @@
           <n-link
             v-for="submenuItem in group.links"
             :key="submenuItem"
-            :to="{ name: `${group.title}-${submenuItem}___${$route.name.slice(-2)}` }"
+            :to="{ name: `${group.title}-${submenuItem}___${$route.name ? $route.name.slice(-2) : 'en'}` }"
             class="link"
           >
             <sub-item
@@ -60,7 +60,7 @@
         >
           <n-link
             class="link"
-            :to="{ name: `${group.title}-${link}___${$route.name.slice(-2)}` }"
+            :to="{ name: `${group.title}-${link}___${$route.name ? $route.name.slice(-2) : 'en'}` }"
           >
             <div>
               <div class="title">

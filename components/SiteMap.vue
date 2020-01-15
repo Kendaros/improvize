@@ -15,7 +15,7 @@
       >
         <n-link
           class="link"
-          :to="{ name: `${group.title}-${link}___${$route.name.slice(-2)}` }"
+          :to="{ name: `${group.title}-${link}___${$route.name ? $route.name.slice(-2) : 'en'}` }"
         >
           {{ $t(`menu.${link}`) }}
         </n-link>

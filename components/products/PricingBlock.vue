@@ -23,7 +23,7 @@
       </div>
       <n-link
         v-if="assistance"
-        :to="{ name: `services-support___${$route.name.slice(-2)}` }"
+        :to="{ name: `services-support___${$route.name ? $route.name.slice(-2) : 'en'}` }"
         class="technical-assistance"
       >
         {{ $t('general.technical-assistance') }}

@@ -56,7 +56,7 @@
           :img-alt="$t(`menu.${software}`)"
           img-width="121"
           :btn-text="$t('home.softwares.discover', { software: $t(`menu.${software}`) })"
-          :link="`products-${software}___${$route.name.slice(-2)}`"
+          :link="`products-${software}___${$route.name ? $route.name.slice(-2) : 'en'}`"
         />
       </div>
     </section>
