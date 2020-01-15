@@ -1,7 +1,7 @@
 <template>
   <main class="versioning">
     <div class="presentation padded inside-the-grid">
-      <img src="../../../assets/img/resources/version.svg" alt="Versioning">
+      <img src="../../assets/img/resources/version.svg" alt="Versioning">
       <h1 class="title">
         {{ $t('menu.versioning') }}
       </h1>
@@ -58,7 +58,7 @@
         >
           {{ $t('versioning.history') }}
           <img
-            src="../../../assets/img/arrow.svg"
+            src="../../assets/img/arrow.svg"
             alt="arrow"
             class="image"
           >
@@ -68,7 +68,7 @@
 
     <img
       class="bg-gradient"
-      src="../../../assets/img/bg-gradient.svg"
+      src="../../assets/img/bg-gradient.svg"
       alt=""
     >
   </main>
@@ -102,7 +102,7 @@ export default class Versioning extends Vue {
 
   getImage (path: string): any {
     try {
-      return require(`../../../assets/img/clients/${path}.png`)
+      return require(`@/assets/img/clients/${path}.png`)
     } catch {
       console.error(`Couldn't load assets/img/clients/${path}.png`)
     }

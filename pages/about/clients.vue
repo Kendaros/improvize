@@ -21,7 +21,7 @@
 
     <img
       class="bg-gradient"
-      src="../../../assets/img/bg-gradient.svg"
+      src="../../assets/img/bg-gradient.svg"
       alt=""
     >
   </main>
@@ -40,7 +40,7 @@ export default class Clients extends Vue {
 
   getImage (path: string): any {
     try {
-      return require(`../../../assets/img/clients/${path}.png`)
+      return require(`~/assets/img/clients/${path}.png`)
     } catch {
       console.error(`Couldn't load assets/img/clients/${path}.png`)
     }

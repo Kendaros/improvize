@@ -12,7 +12,7 @@
     />
     <img
       class="bg-gradient"
-      src="../../../assets/img/bg-gradient.svg"
+      src="../../assets/img/bg-gradient.svg"
       alt=""
     >
     <pricing-block
