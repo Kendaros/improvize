@@ -143,7 +143,7 @@ const config: ImprovizeConfig = {
       },
       {
         title: 'updates',
-        price: 1800,
+        price: 0,
         frequency: 'onetime',
         button: false
       }

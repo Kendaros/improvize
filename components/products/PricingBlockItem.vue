@@ -3,12 +3,19 @@
     <h3 class="title">
       {{ title }}
     </h3>
-    <div class="price">
+    <div
+      v-if="price !== 0"
+      class="price"
+    >
       <span class="figure">
         {{ $n(price, `${price % 1 === 0 ? 'currency' : 'currencyDecimals'}`) }}
       </span>
       <span class="ht">H.T</span>
     </div>
+    <div
+      v-else
+      class="price"
+    />
     <div
       v-if="frequency !== ''"
       class="monhtly"
@@ -79,6 +86,7 @@ $pricing-block-item-padding: 33px;
   > .price {
     margin-top: 40px;
     padding: 0 $pricing-block-item-padding;
+    min-height: 60px;
 
     > .figure {
       font-family: $miso;
