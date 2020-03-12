@@ -23,6 +23,18 @@
       {{ $t(`general.${frequency}`) }}
     </div>
     <ul
+      v-if="modules !== ''"
+      class="modules"
+    >
+      <li
+        v-for="(item, i) in modules.split('\n')"
+        :key="`modules-item-${title}-${i}`"
+        class="module"
+      >
+        {{ item }}
+      </li>
+    </ul>
+    <ul
       v-if="features !== ''"
       class="features"
     >
@@ -53,6 +65,7 @@ export default class PricingBlockItem extends Vue {
   @Prop() price!: number
   @Prop({ default: '' }) frequency!: string
   @Prop({ default: '' }) features!: string
+  @Prop({ default: '' }) modules!: string
   @Prop({ default: false }) button!: boolean
 
   get email (): string {
@@ -108,6 +121,20 @@ $pricing-block-item-padding: 33px;
       line-height: 1.63;
 
       + .feature {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  > .modules {
+    margin: 46px $pricing-block-item-padding 40px;
+    text-align: left;
+
+    > .module {
+      list-style-image: url('../../assets/img/gear.svg');
+      line-height: 1.63;
+
+      + .module {
         margin-top: 20px;
       }
     }

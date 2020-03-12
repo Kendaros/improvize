@@ -16,6 +16,7 @@
           :key="`pricing-block-${i}`"
           :title="$t(`${category}.${productName}.pricing.${pricingSubKey ? `${pricingSubKey}.` : ''}${item.title}.title`)"
           :price="item.price"
+          :modules="$t(`${category}.${productName}.pricing.${pricingSubKey ? `${pricingSubKey}.` : ''}${item.title}.modules`)"
           :features="$t(`${category}.${productName}.pricing.${pricingSubKey ? `${pricingSubKey}.` : ''}${item.title}.features`)"
           :button="item.button"
           :frequency="item.frequency"

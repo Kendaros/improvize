@@ -124,20 +124,32 @@ const config: ImprovizeConfig = {
   pricings: {
     lesage: [
       {
-        title: 'license',
-        price: 8000,
+        title: 'fullversion',
+        price: 9000,
         frequency: 'onetime',
         button: true
       },
      {
-        title: 'singlelicense',
-        price: 5000,
+        title: 'registration',
+        price: 4000,
+        frequency: 'onetime',
+        button: true
+      },
+     {
+        title: 'royalties',
+        price: 4000,
+        frequency: 'onetime',
+        button: true
+      },
+     {
+        title: 'analysis',
+        price: 3000,
         frequency: 'onetime',
         button: true
       },
       {
-        title: 'registration',
-        price: 1000,
+        title: 'gendocs',
+        price: 500,
         frequency: 'onetime',
         button: false
       },
@@ -172,14 +184,14 @@ const config: ImprovizeConfig = {
       shared: [
         {
           title: 'one',
-          price: 30,
-          frequency: 'monthly',
+          price: 400,
+          frequency: 'yearly',
           button: false
         },
         {
           title: 'two',
-          price: 50,
-          frequency: 'monthly',
+          price: 660,
+          frequency: 'yearly',
           button: false
         }
       ],
@@ -207,13 +219,13 @@ const config: ImprovizeConfig = {
     training: [
       {
         title: 'days',
-        price: 600,
+        price: 1000,
         frequency: 'daily',
         button: false
       },
       {
         title: 'workshop',
-        price: 150,
+        price: 175,
         frequency: 'daily',
         button: false
       }

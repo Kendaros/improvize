@@ -106,24 +106,29 @@
         "shared": {
           "one": {
             "title": "One database",
+            "modules": "",
             "features": ""
           },
           "two": {
             "title": "2 to 3 databases",
+            "modules": "",
             "features": ""
           }
         },
         "dedicated": {
           "standard": {
             "title": "Standard",
+            "modules": "",
             "features": "64Go RAM / 1 To disc or 32Go RAM / 4 To disc"
           },
           "premium": {
             "title": "Premium",
+            "modules": "",
             "features": "96Go RAM / 1 To SSD"
           },
           "deluxe": {
             "title": "Deluxe",
+            "modules": "",
             "features": "128Go RAM / 6 To or 128Go RAM / 1,5 To SSD (Commissioning: 120€)"
           }
         }
@@ -145,10 +150,12 @@
       "pricing": {
         "days": {
           "title": "Training days",
+          "modules": "",
           "features": "Certified by DATA DOCK (AFDAS can finance partially or entirely the training)"
         },
         "workshop": {
           "title": "Annual workshop",
+          "modules": "",
           "features": ""
         }
       }
@@ -187,21 +194,35 @@
         "list": "Ongoing improvement: about 80 versions per year\nDevelopment ethics: listening, collaborative, intuitivity, flexibility\nCompatibility: import/export data filters\nDedicated technical support / Training\nBug tracking system"
       },
       "pricing": {
-        "license": {
-          "title": "License",
+        "fullversion": {
+          "title": "Full version",
+          "modules": "Base module\nRegistration module\nRoyalties module\nAnalysis module",
           "features": "Unlimited users\nUnlimited databases\n4 hours of technical assistance\nLifetime license\nFirst year's updates"
         },
-        "singlelicense": {
-          "title": "Single License",
+        "registration": {
+          "title": "Registration",
+          "modules": "Base module\nRegistration module",
           "features": "Limited users\nLimited databases\n4 hours of technical assistance\nLifetime license\nFirst year's updates"
         },
-        "registration": {
-          "title": "Registration module",
-          "features": "CWR checking and cleaning\nWorldwide registration\nCatalogue export for subpublishers"
+        "royalties": {
+          "title": "Royalties",
+          "modules": "Base module\nRoyalties module",
+          "features": "Limited users\nLimited databases\n4 hours of technical assistance\nLifetime license\nFirst year's updates"
+        },
+        "analysis": {
+          "title": "Analysis",
+          "modules": "Base module\nAnalysis module",
+          "features": "Limited users\nLimited databases\n4 hours of technical assistance\nLifetime license\nFirst year's updates"
+        },
+        "gendocs": {
+          "title": "Document generator",
+          "modules": "",
+          "features": "Create Word documents based on your templates and Le Sage's database\nUnlimited templates"
         },
         "updates": {
           "title": "Updates",
-          "features": "Yearly subscription to updates of the software"
+          "modules": "",
+          "features": "Yearly subscription to updates of the software\n20% of acquisition price"
         }
       }
     },
@@ -210,14 +231,17 @@
       "pricing": {
         "license": {
           "title": "License",
+          "modules": "",
           "features": "Unlimited users\nUnlimited databases\n4 hours of technical assistance\nLifetime license\nFirst year's updates"
         },
         "young": {
           "title": "Young Producers/labels",
+          "modules": "",
           "features": "Limited users\nOne database\n4 hours of technical assistance\nLifetime license\nFirst year's updates"
         },
         "updates": {
           "title": "Updates",
+          "modules": "",
           "features": "Yearly subscription to updates of the software"
         }
       }
